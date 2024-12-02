@@ -17,17 +17,17 @@ export const PROJECT_INFO = [
     {
         id: 1,
         Title: {
-            es: "Projecto 1",
-            en: "Proyect 1."
+            es: "Organizador de Tareas",
+            en: "Task Blog"
         },
         Description: {
-            es: "Curso Aprende CSS3 sin dolor, con Fransisco Javier Arce.",
-            en: "CSS is a style sheet language used for describing the presentation of a document written in HTML."
+            es: "Desarrollo de una herramienta de trabajo para organizar las tareas pendientes en el dia a dia. Se ha usado ReactJS y TypeScript. Esta experiéncia me permitio profundizar en funcionalidades como las call a base de datos, etc. Para la interfaz use TailwindCSS, logrando un diseño responsivey visulamente atractico.",
+            en: "Proyect"
         },
         Image: fondo,
-        Tools1: iconHTML,
-        Tools2: iconCSS,
-        Tools3:iconCSS,
+        Tools1: iconReact,
+        Tools2: iconTypeScript,
+        Tools3:iconTailwind,
         language: "es",
 
     },
@@ -41,7 +41,7 @@ export const PROJECT_INFO = [
             es: "Curso Aprende CSS3 sin dolor, con Fransisco Javier Arce.",
             en: "CSS is a style sheet language used for describing the presentation of a document written in HTML."
         },
-        Image: iconCSS,
+        Image: fondo,
         Tools1: iconHTML,
         Tools2: iconCSS,
         Tools3:iconCSS,
@@ -58,7 +58,7 @@ export const PROJECT_INFO = [
             es: "Curso Aprende CSS3 sin dolor, con Fransisco Javier Arce.",
             en: "CSS is a style sheet language used for describing the presentation of a document written in HTML."
         },
-        Image: iconCSS,
+        Image: fondo,
         Tools1: iconHTML,
         Tools2: iconCSS,
         Tools3:iconCSS,

@@ -54,7 +54,7 @@ const Footer = ({ language }) => {
                 {/* Botón para volver arriba */}
                 <button
                     onClick={handleScrollToTop}
-                    className="text-3xl bg-cyan-300 text-white rounded-full shadow-lg p-3 hover:bg-cyan-500 fixed bottom-10 right-10"
+                    className="text-4xl bg-indigo-500 text-white rounded-full shadow-lg p-3 hover:bg-cyan-500 fixed bottom-40 right-10"
                 >
                     <ion-icon name="arrow-up-circle-outline"></ion-icon>
                 </button>
