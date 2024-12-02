@@ -9,7 +9,7 @@ export function CardSkill({ language }) {
                 {COURSES_INFO.map(course => (
                     <div key={course.id} className="skill-box p-6 dark:bg-indigo-950 bg-gray-600 rounded-lg text-white cursor-pointer group transition duration-300 relative">
                         <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-70">
-                            <h3 className="text-lg font-bold text-white ">{course.Title}</h3>
+                            <h3 className="text-lg font-bold text-teal-500 ">{course.Title}</h3>
                             <p className="text-md text-white">
                                 {course.Description[language] || course.Description['es']}
                             </p>

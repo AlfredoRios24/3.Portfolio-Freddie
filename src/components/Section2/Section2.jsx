@@ -3,21 +3,14 @@ import { TRANSLATION_SECTION2 } from '../../data/Translations';
 import { CardSkill } from './CardSkill';
 
 function Section2({ language }) {
-
     return (
-        <section className="p-36 md:flex md:items-center md:justify-between" id="section2">
-            <div className="container py-2 mx-auto">
-                <div className="flex flex-wrap justify-center items-center mx-auto">
-                    <div className="w-full">
-                        <h1 className="text-center mt-1 text-4xl py-1 font-bold text-wrap snap-start">
-                            {TRANSLATION_SECTION2[language].titleCourse}
-                        </h1>
-                        <p className="mb-1 text-center py-4 text-xl">
-                            {TRANSLATION_SECTION2[language].titleCourseDescription}
-                        </p>
-                        <CardSkill language={language} />
-                    </div>
-                </div>
+        <section className="px-4 sm:px-8 lg:px-16 py-32 flex flex-col items-center" id="section2">
+            <div className="container mx-auto text-center">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+                    {TRANSLATION_SECTION2[language].titleCourse}
+                </h1>
+                <p className="text-lg sm:text-xl mb-6">{TRANSLATION_SECTION2[language].titleCourseDescription}</p>
+                <CardSkill language={language} />
             </div>
         </section>
     );

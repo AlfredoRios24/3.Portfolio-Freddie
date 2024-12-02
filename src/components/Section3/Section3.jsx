@@ -1,33 +1,29 @@
 import PropTypes from 'prop-types';
-import fondo from '../../assets/fond.png'
+import CardProject from './CardProject';
+import { TRANSLATION_SECTION3 } from '../../data/Translations';
 
-// eslint-disable-next-line no-unused-vars
-function Section3 ({language}) {
+function Section3({ language }) {
     return (
-        <section id="section3" className='bg-yellow-200 p-36 md:flex md:items-center md:justify-between m-0 p-0 box-border'>
-            <div id="container" className='bg-red-200 w-full flex m-auto'>
-                <div id="card" className=' w-full m-auto p-5 mt-5 text-center text-gray-600t'>
-                    <figure className='bg-teal-500 text-white'>
-                        <img src={fondo} alt="" className='w-full h-56'/>
-                    </figure>
-                    <div className='p-4 text-center'>
-                        <h3 className='mb-4 text-gray-600'>TITLE</h3>
-                        <p className='text-gray-700 text-sm mb-1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam excepturi accusamus esse ea, officiis magni magnam consectetur, cumque obcaecati deleniti, eos nihil aperiam unde doloribus voluptatem. Impedit totam at voluptatibus!</p>
-                        <a href="" className='inline-block p-2 mt-2 no-underline text-teal-500 rounded mb-1'>Leer Mas</a>
-                    </div>
-                </div>
+        <section id="section3" className="px-4 sm:px-8 lg:px-16 py-32">
+            <div className="text-center mb-8">
+                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+                    {TRANSLATION_SECTION3[language].titleProject}
+                </h1>
+                <p className="text-lg sm:text-xl mb-8">
+                    {TRANSLATION_SECTION3[language].titleProjectDescription}
+                </p>
             </div>
 
+            <div className="w-full flex justify-center flex-wrap gap-6 mx-auto p-8 rounded-2xl bg-white dark:bg-indigo-950">
+                <CardProject />
+            </div>
         </section>
-        
-    )
+    );
 }
 
-// Validación de las props
 Section3.propTypes = {
     language: PropTypes.string.isRequired,
     toggleLanguage: PropTypes.func.isRequired,
 };
 
-export default Section3
-
+export default Section3;

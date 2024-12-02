@@ -36,16 +36,14 @@ export const TRANSLATION_SECTION2 = {
 
 export const TRANSLATION_SECTION3 = {
     es:{
-        titleSection3: "Proyectos",
+        titleProject: "Proyectos",
+        titleProjectDescription: "Selecciona el icono deseado para más información:"
     },
     en:{
-        titleSection3: "Proyects",
+        titleProject: "Proyects",
+        titleProjectDescription: "Selecciona el icono deseado para más información:"
     },
 };
-
-
-
-
 
 
 export const TRANSLATION_FOOTER = {

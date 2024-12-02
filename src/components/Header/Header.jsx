@@ -20,7 +20,7 @@
 
 
     return (
-        <nav className="navheader dark:bg-gradient-to-r from-black to-blue-950">
+        <nav className="navheader dark:bg-gray-900">
         <div className="flex justify-between items-center">
             <span className="text-4xl linkheadersection">
             <button onClick={toggleHeader}>

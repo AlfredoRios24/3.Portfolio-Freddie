@@ -8,7 +8,7 @@ import Section2 from './components/Section2/Section2';
 import Section3 from './components/Section3/Section3';
 
 function App() {
-  const [language, setLanguage] = useState('es'); 
+  const [language, setLanguage] = useState('es');
 
   const toggleLanguage = () => {
     setLanguage(prevLang => (prevLang === 'es' ? 'en' : 'es'));
@@ -16,40 +16,42 @@ function App() {
 
   const [isDarkMode, setIsDarkMode] = useState(true);
 
-    const toggleTheme = () => {
-      setIsDarkMode((prevMode) => !prevMode);
-    };
+  const toggleTheme = () => {
+    setIsDarkMode((prevMode) => !prevMode);
+  };
 
-    useEffect(() => {
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme) {
-        setIsDarkMode(savedTheme === 'dark');
-      }
-    }, []);
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setIsDarkMode(savedTheme === 'dark');
+    }
+  }, []);
 
-    useEffect(() => {
-      if (isDarkMode) {
-        document.body.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.body.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      }
-    }, [isDarkMode]);
-
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.body.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [isDarkMode]);
 
   return (
     <>
-    <div className={isDarkMode ? 'dark' : ''} id="Master-Container">
-      <Header
-        language={language} toggleLanguage={toggleLanguage}
-        toggleTheme={toggleTheme} isDarkMode={isDarkMode}
-      />
-      <Section1 language={language} toggleLanguage={toggleLanguage} />
-      <Section2 language={language} toggleLanguage={toggleLanguage} />
-      <Section3 language={language} toggleLanguage={toggleLanguage} />
-      <Footer language={language} toggleLanguage={toggleLanguage} />
-
+      <div className={isDarkMode ? 'dark' : ''} id="Master-Container">
+        <Header
+          language={language}
+          toggleLanguage={toggleLanguage}
+          toggleTheme={toggleTheme}
+          isDarkMode={isDarkMode}
+        />
+        <main className="px-4 sm:px-6 lg:px-12">
+          <Section1 language={language} toggleLanguage={toggleLanguage} />
+          <Section2 language={language} toggleLanguage={toggleLanguage} />
+          <Section3 language={language} toggleLanguage={toggleLanguage} />
+        </main>
+        <Footer language={language} toggleLanguage={toggleLanguage} />
       </div>
     </>
   );
