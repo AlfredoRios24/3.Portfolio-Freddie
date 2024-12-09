@@ -23,7 +23,7 @@ export const COURSES_INFO = [
         Image: iconHTML,
         ImageCU: iconUdemy,
         language: "es",
-
+        isStudying: false
     },
     {
         id: 2,
@@ -34,6 +34,7 @@ export const COURSES_INFO = [
         },
         Image: iconCSS,
         language: "es",
+        isStudying: false
     },
     {
         id: 3,
@@ -44,6 +45,7 @@ export const COURSES_INFO = [
         },
         Image: iconJavaScript,
         language: "es",
+        isStudying: false
     },
     {
         id: 4,
@@ -54,6 +56,7 @@ export const COURSES_INFO = [
         },
         Image: iconReact,
         language: "es",
+        isStudying: false
     },
     {
         id: 5,
@@ -64,6 +67,7 @@ export const COURSES_INFO = [
         },
         Image: iconTailwind,
         language: "es",
+        isStudying: false
     },
     {
         id: 6,
@@ -74,6 +78,7 @@ export const COURSES_INFO = [
         },
         Image: iconJava,
         language: "es",
+        isStudying: false
     },
     {
         id: 7,
@@ -84,16 +89,18 @@ export const COURSES_INFO = [
         },
         Image: iconTypeScript,
         language: "es",
+        isStudying: false
     },
     {
         id: 8,
-        Title: "TypeScript",
+        Title: "SQLite",
         Description: {
             es: "Curso Base de Datos Sqlite con Udemy.",
             en: "Java is a general-purpose, object-oriented programming language."
         },
         Image: iconSqlite,
         language: "es",
+        isStudying: true
     },
     {
         id: 9,
@@ -104,5 +111,6 @@ export const COURSES_INFO = [
         },
         Image: iconBook,
         language: "es",
+        isStudying: false
     },
 ];

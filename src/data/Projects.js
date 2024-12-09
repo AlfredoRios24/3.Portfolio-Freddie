@@ -22,7 +22,7 @@ export const PROJECT_INFO = [
         },
         Description: {
             es: "Desarrollo de una herramienta de trabajo para organizar las tareas pendientes en el dia a dia. Se ha usado ReactJS y TypeScript. Esta experiéncia me permitio profundizar en funcionalidades como las call a base de datos, etc. Para la interfaz use TailwindCSS, logrando un diseño responsivey visulamente atractico.",
-            en: "Proyect"
+            en: "Development of a work tool to organise the tasks to be done on a daily basis. ReactJS and TypeScript were used. This experience allowed me to deepen in functionalities such as database calls, etc. For the interface I used TailwindCSS, achieving a responsive and visually appealing design."
         },
         Image: fondo,
         Tools1: iconReact,
@@ -34,17 +34,17 @@ export const PROJECT_INFO = [
     {
         id: 2,
         Title: {
-            es: "Projecto 2",
-            en: "Proyect 2"
+            es: "Web Serralleria Fanals",
+            en: "Web Serralleria Fanals"
         },
         Description: {
-            es: "Curso Aprende CSS3 sin dolor, con Fransisco Javier Arce.",
-            en: "CSS is a style sheet language used for describing the presentation of a document written in HTML."
+            es: "Desarrollo de una pagina web estática con algunos elementos responsivos, la estructura esta inspirada en la usada en este portfolio. Se ha usado ReactJS y JavaScript. Para la interfaz TaqilwindCSS. Esta experiència me permitió poder crear una página web escalable.",
+            en: "Development of a static website with some responsive elements, the structure is inspired by the one used in this portfolio. ReactJS and JavaScript have been used. For the interface TaqilwindCSS. This experience allowed me to create a scalable website."
         },
         Image: fondo,
-        Tools1: iconHTML,
-        Tools2: iconCSS,
-        Tools3:iconCSS,
+        Tools1: iconReact,
+        Tools2: iconJavaScript,
+        Tools3:iconTailwind,
         language: "es",
         
     },

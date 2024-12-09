@@ -25,11 +25,11 @@ export const TRANSLATIONS_SECTION1 = {
 export const TRANSLATION_SECTION2 = {
     es:{
         titleCourse: "FORMACIONES",
-        titleCourseDescription: "Selecciona el icono deseado para más información:"
+        titleCourseDescription: "Todas las formaciones se han realizado a través de un curso, pero también se han realizado diferentes cursos gratuitos online a través de articulos de lectura, librerias web y videos de Youtube."
     },
     en:{
         titleCourse: "COURSES",
-        titleCourseDescription: "Selected the icon for more information:"
+        titleCourseDescription: "All trainings have been done through a course, but there have also been different free online courses through reading articles, web libraries and Youtube videos."
     },
 };
 
@@ -37,11 +37,11 @@ export const TRANSLATION_SECTION2 = {
 export const TRANSLATION_SECTION3 = {
     es:{
         titleProject: "Proyectos",
-        titleProjectDescription: "Selecciona el icono deseado para más información:"
+        titleProjectDescription: " "
     },
     en:{
-        titleProject: "Proyects",
-        titleProjectDescription: "Selecciona el icono deseado para más información:"
+        titleProject: "Projects",
+        titleProjectDescription: " "
     },
 };
 

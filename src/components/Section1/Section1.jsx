@@ -28,6 +28,20 @@ function Section1({ language }) {
                 <div className="w-full text-center mt-8">
                     <h2 className="text-2xl sm:text-3xl font-bold mt-6">{TitleJob}</h2>
                     <p className="text-lg sm:text-xl mt-4">{DescriptionJob[language]}</p>
+
+                    <button
+                        className="bg-indigo-600 text-white py-2 px-6 rounded-md mt-8 hover:bg-cyan-500"
+                        onClick={handleClickSection1}>
+                        {TitleExperience[language]}
+                    </button>
+                        {isVisible && (
+                        <div className="mt-8">
+                            <p className="text-lg sm:text-xl mt-4">{MoreInfo[language]}</p>
+                            <hr className="w-48 mx-auto my-4 bg-gray-200 border-0 rounded dark:bg-gray-700" />
+                            <p className="text-lg sm:text-xl mt-4">{Experiencie[language]}</p>
+                        </div>
+                        )}
+
                     <div className="mt-6 space-y-4">
                         <a href="https://www.linkedin.com/in/alfredo-rios-010860101/" className="linksection1">
                             <ion-icon name="logo-linkedin" className="mr-2"></ion-icon>Linkedin
@@ -50,21 +64,10 @@ function Section1({ language }) {
                             </a>
                         </button>
                     </div>
-                    <button
-                        className="bg-indigo-600 text-white py-2 px-6 rounded-md mt-8 hover:bg-cyan-500"
-                        onClick={handleClickSection1}
-                    >
-                        {TitleExperience[language]}
-                    </button>
+
                 </div>
 
-                {isVisible && (
-                    <div className="mt-8">
-                        <p className="text-lg">{MoreInfo[language]}</p>
-                        <hr className="w-48 mx-auto my-4 bg-gray-200 border-0 rounded dark:bg-gray-700" />
-                        <p className="text-lg">{Experiencie[language]}</p>
-                    </div>
-                )}
+
             </div>
         </section>
     );
