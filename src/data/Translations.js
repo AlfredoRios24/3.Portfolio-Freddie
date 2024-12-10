@@ -25,7 +25,7 @@ export const TRANSLATIONS_SECTION1 = {
 export const TRANSLATION_SECTION2 = {
     es:{
         titleCourse: "FORMACIONES",
-        titleCourseDescription: "Todas las formaciones se han realizado a través de un curso, pero también se han realizado diferentes cursos gratuitos online a través de articulos de lectura, librerias web y videos de Youtube."
+        titleCourseDescription: "Todas mis formaciones han sido realizadas a través de un curso privado online, incluyendo la lectura de artículos, exploración de librerías web y videos educativos en YouTube."
     },
     en:{
         titleCourse: "COURSES",
