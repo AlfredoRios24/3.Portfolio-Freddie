@@ -43,13 +43,13 @@ function Section1({ language }) {
                         )}
 
                     <div className="mt-6 space-y-4">
-                        <a href="https://www.linkedin.com/in/alfredo-rios-010860101/" className="linksection1">
+                        <a href="https://www.linkedin.com/in/alfredo-rios-010860101/" target='_blank' className="linksection1">
                             <ion-icon name="logo-linkedin" className="mr-2"></ion-icon>Linkedin
                         </a>
-                        <a href="https://github.com/AlfredoRios24" className="linksection1">
+                        <a href="https://github.com/AlfredoRios24" target='_blank'  className="linksection1">
                             <ion-icon name="logo-github" className="mr-2"></ion-icon> AlfredoRios24
                         </a>
-                        <a href="https://vercel.com/alfredorios24s-projects" className="linksection1">
+                        <a href="https://vercel.com/alfredorios24s-projects" target='_blank' className="linksection1">
                             <ion-icon name="logo-vercel" className="mr-2"></ion-icon> Vercel
                         </a>
                         <a href="">

@@ -42,10 +42,10 @@ export function CardProject() {
                             {PROJECT_INFO[1].Description[PROJECT_INFO[1].language]}
                         </p>
                         <div className="mt-4">
-                            <a href="#" className="inline-block p-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
+                            <a href="#" target='_blank' className="inline-block p-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
                                 <ion-icon name="logo-github" className=""></ion-icon> CODE
                             </a>
-                            <a href="#" className="inline-block p-2 ml-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
+                            <a href="#" target='_blank' className="inline-block p-2 ml-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
                                 <ion-icon name="logo-vercel"></ion-icon> VIEW
                             </a>
                         </div>
