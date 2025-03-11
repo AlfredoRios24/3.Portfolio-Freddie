@@ -17,12 +17,12 @@ export const PROJECT_INFO = [
     {
         id: 1,
         Title: {
-            es: "Organizador de Tareas",
-            en: "Task Blog"
+            es: "Registro de Notas",
+            en: "Register Note"
         },
         Description: {
-            es: "Desarrollo de una herramienta de trabajo para organizar las tareas pendientes en el dia a dia. Se ha usado ReactJS y TypeScript. Esta experiéncia me permitio profundizar en funcionalidades como las call a base de datos, etc. Para la interfaz use TailwindCSS, logrando un diseño responsivey visulamente atractico.",
-            en: "Development of a work tool to organise the tasks to be done on a daily basis. ReactJS and TypeScript were used. This experience allowed me to deepen in functionalities such as database calls, etc. For the interface I used TailwindCSS, achieving a responsive and visually appealing design."
+            es: "Desarrollo de una herramienta de trabajo para crear, editar y guardar notas. Se han usado diferentes técnologias, des del lado del Fronted: ReactJS y TypeScript y del Backend: Spring y Mysql. Esta experiéncia me permitio profundizar en funcionalidades como hacer las llamadas al servidor, comprender parte de un funcionamiento api curl, priebas unitarias e integrales.",
+            en: "Development of a working tool to create, edit and save notes. Different technologies have been used, from the frontend side: ReactJS and TypeScript and from the backend side: Spring and Mysql. This experience allowed me to deepen in functionalities such as making calls to the server, understanding part of a curl api operation, unit and integral priebas."
         },
         Image: fondo,
         Tools1: iconReact,
