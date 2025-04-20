@@ -10,6 +10,8 @@ import iconSqlite from '../assets/IconsProgramation/Sqlite.png'
 import iconUdemy from '../assets/LogoUdemy.jpg';
 import iconBook from '../assets/iconBook2.png';
 import fondo from '../assets/fond.png'
+import fondowbfanals from '../assets/fondo-wbfanals3.jpg'
+import wordpress from '../assets/IconsProgramation/wordpress.png'
 
 
 
@@ -21,7 +23,7 @@ export const PROJECT_INFO = [
             en: "Register Note"
         },
         Description: {
-            es: "Desarrollo de una herramienta de trabajo para crear, editar y guardar notas. Se han usado diferentes técnologias, des del lado del Fronted: ReactJS y TypeScript y del Backend: Spring y Mysql. Esta experiéncia me permitio profundizar en funcionalidades como hacer las llamadas al servidor, comprender parte de un funcionamiento api curl, priebas unitarias e integrales.",
+            es: "Desarrollo de una herramienta de trabajo para crear, editar y guardar notas. Se han usado diferentes técnologias, des del lado del Fronted: ReactJS y TypeScript y del Backend: Spring y Mysql. Esta experiéncia me permitio profundizar en funcionalidades como hacer las llamadas al servidor, comprender parte de un funcionamiento api curl y crear mis primeras pruebas unitarias e integrales.",
             en: "Development of a working tool to create, edit and save notes. Different technologies have been used, from the frontend side: ReactJS and TypeScript and from the backend side: Spring and Mysql. This experience allowed me to deepen in functionalities such as making calls to the server, understanding part of a curl api operation, unit and integral priebas."
         },
         Image: fondo,
@@ -38,11 +40,11 @@ export const PROJECT_INFO = [
             en: "Web Serralleria Fanals"
         },
         Description: {
-            es: "Desarrollo de una pagina web estática con algunos elementos responsivos, la estructura esta inspirada en la usada en este portfolio. Se ha usado ReactJS y JavaScript. Para la interfaz TaqilwindCSS. Esta experiència me permitió poder crear una página web escalable.",
-            en: "Development of a static website with some responsive elements, the structure is inspired by the one used in this portfolio. ReactJS and JavaScript have been used. For the interface TaqilwindCSS. This experience allowed me to create a scalable website."
+            es: "Desarrollo de una pagina web a través de la herramienta de Wordpress, la empresa es real y se estima que pueda ser pública en un futuro cercano. La construccion y deseño estan inspirado en plantillas de Elementor de WP",
+            en: "Development of a website through the Wordpress tool, the company is real and is expected to be public in the near future. The construction and design are inspired by WP Elementor templates."
         },
-        Image: fondo,
-        Tools1: iconReact,
+        Image: fondowbfanals,
+        Tools1: wordpress,
         Tools2: iconJavaScript,
         Tools3:iconTailwind,
         language: "es",

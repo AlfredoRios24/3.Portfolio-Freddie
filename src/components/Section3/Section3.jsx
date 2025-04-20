@@ -14,7 +14,7 @@ function Section3({ language }) {
                 </p>
             </div>
 
-            <div className="w-full flex justify-center flex-wrap gap-6 mx-auto p-8 rounded-2xl bg-white dark:bg-indigo-950">
+            <div className="mx-auto p-8 rounded-2xl bg-white dark:bg-indigo-950 max-w-7xl">
                 <CardProject />
             </div>
         </section>
