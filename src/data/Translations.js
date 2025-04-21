@@ -25,11 +25,11 @@ export const TRANSLATIONS_SECTION1 = {
 export const TRANSLATION_SECTION2 = {
     es:{
         titleCourse: "FORMACIONES",
-        titleCourseDescription: "Todas mis formaciones han sido realizadas a través de un curso privado online, incluyendo la lectura de artículos, exploración de librerías web y videos educativos en YouTube."
+        titleCourseDescription: "Todas mis formaciones han sido realizadas a través de un curso privado online como Udemy, incluyendo lectura de diferentes artículos, librerías web, videos y lectura de libros."
     },
     en:{
         titleCourse: "COURSES",
-        titleCourseDescription: "All trainings have been done through a course, but there have also been different free online courses through reading articles, web libraries and Youtube videos."
+        titleCourseDescription: "All my training has been done through a private online course such as Udemy, including reading different articles, web libraries, videos and reading books."
     },
 };
 

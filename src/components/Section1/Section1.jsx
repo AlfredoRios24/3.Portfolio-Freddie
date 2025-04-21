@@ -33,6 +33,8 @@ function Section1({ language }) {
                         className="bg-indigo-600 text-white py-2 px-6 rounded-md mt-8 hover:bg-cyan-500"
                         onClick={handleClickSection1}>
                         {TitleExperience[language]}
+                        <hr className='w-4 mx-auto my-1 bg-gray-200 border-0 rounded dark:bg-gray-700'/>
+                        <ion-icon name={isVisible ? 'chevron-up-outline' : 'chevron-down-outline'}></ion-icon>
                     </button>
                         {isVisible && (
                         <div className="mt-8">

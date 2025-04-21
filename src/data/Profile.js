@@ -5,24 +5,24 @@ export const PROFILE_INFO = [
     {
     TitleJob: "Programador Fronted",
     DescriptionJob: {
-        es: "¡Hola Mundo! He tomado la decisión de pasar al mundo de la Programación porque he descubierto, entre otras cosas, que puedo crear diferentes herramientas que pueden ayudar a mejorar la experiencia de los usuarios. Esto no solo me permite contribuir al desarrollo, sino que también me ayuda a comprender mejor el funcionamiento del software",
-        en: "Hello World! I've made the decision to move into programming because I've discovered, among other things, that I can create different tools that can help improve the user experience and at the same time help me understand how things work.",
+        es: "¡Hola Mundo! He tomado la decisión de cambiar de profesion a el de la Programación porque he descubierto, entre otras cosas, que me gusta crear diferentes herramientas que puedan ayudar a mejorar o facilitar las cosas. Esto no solo me permite contribuir en el desarrollo de algo innovador, sino que también me ayuda a comprender mejor como funcionan.",
+        en: "Hello World! I have taken the decision to change my profession to programming because I have discovered, among other things, that I like to create different tools that can help to improve or make things easier. This not only allows me to contribute to the development of something innovative, but also helps me to better understand how they work.",
         },
     Image: imageProfile,
     Language: "es",
     Phone: "+34 628 801 453",
     Email: "alfredoerios_03@hotmail.com",
     TitleExperience: {
-        es: "Más información?",
-        en: "More info?"
+        es: "¿ Más información ?",
+        en: "¿ More info ?"
     },
     MoreInfo: {
-        es: "Soy autodidacta e intento siempre adaptarme a las diferentes situaciones que se me plantean, asumiéndolas como retos que hay que resolver con soluciones efectivas.",
-        en: "I consider myself a self-taught person, in which I always try to adapt myself to the different situations that arise, assuming them as a challenge and as a problem to be solved."
+        es: "Me considero una persona autodidacta y que intento siempre adaptarme a las diferentes situaciones que se me plantean, asumiendo cada problema como si fuera un reto que hay que resolver.",
+        en: "I consider myself a self-taught person who always tries to adapt to the different situations I am faced with, taking on each problem as if it were a challenge to be solved."
         },
     Experiencie: {
         es: "Si bien no cuento con experiencia laboral en programación, tengo más de 8 años de experiencia como coordinador y supervisor de centros deportivos.  Esta experiencia, me ha aportado habilidades claves, como la capacidad para organizar equipos y trabajar con plazos de entrega.",
-        en: "Although I have no work experience in programming, I have more than 8 years of experience as a coordinator and supervisor of sports centres.  This experience has also given me an ability to organise teams and work with delivery targets."
+        en: "Although I do not have programming work experience, I have over 8 years of experience as a coordinator and supervisor of sports centres.  This experience has provided me with key skills, such as the ability to organise teams and work to deadlines."
         },
     }
 ];

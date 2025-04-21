@@ -9,6 +9,8 @@ import iconTypeScript from '../assets/IconsProgramation/typescript.png'
 import iconSqlite from '../assets/IconsProgramation/Sqlite.png'
 import iconUdemy from '../assets/LogoUdemy.jpg';
 import iconBook from '../assets/iconBook2.png';
+import iconmysql from '../assets/IconsProgramation/mysql.png';
+import iconwordpress from '../assets/IconsProgramation/wordpress.png';
 
 
 
@@ -17,7 +19,7 @@ export const COURSES_INFO = [
         id: 1,
         Title: "HTML",
         Description: {
-            es: "Curso HTML5 des de cero: APlicado a la Web, con Guillermo Visintini",
+            es: "1. Curso HTML5 des de cero: APlicado a la Web, con Guillermo Visintini. 2.Curso Universidad Desarrollo Web-FrontEnd Web Developer! con Global Mentoring Ing. Ubaldo Acosta",
             en: "HTML is the standard markup language for creating web pages."
         },
         Image: iconHTML,
@@ -29,7 +31,7 @@ export const COURSES_INFO = [
         id: 2,
         Title: "CSS",
         Description: {
-            es: "Curso Aprende CSS3 sin dolor, con Fransisco Javier Arce.",
+            es: "1. Curso Aprende CSS3 sin dolor, con Fransisco Javier Arce. 2.Curso Universidad Desarrollo Web-FrontEnd Web Developer! con Global Mentoring Ing. Ubaldo Acosta",
             en: "CSS is a style sheet language used for describing the presentation of a document written in HTML."
         },
         Image: iconCSS,
@@ -84,7 +86,7 @@ export const COURSES_INFO = [
         id: 7,
         Title: "TypeScript",
         Description: {
-            es: "Curso TypeScript con Udemy.",
+            es: "Curso TypeScript for Beginners: Mastering TypeScript Fundamentals, por Meta Brains.",
             en: "Java is a general-purpose, object-oriented programming language."
         },
         Image: iconTypeScript,
@@ -95,15 +97,37 @@ export const COURSES_INFO = [
         id: 8,
         Title: "SQLite",
         Description: {
-            es: "Curso Base de Datos Sqlite con Udemy.",
+            es: "Curso de Base de Datos Sqlite por Victor Ramos.",
             en: "Java is a general-purpose, object-oriented programming language."
         },
         Image: iconSqlite,
         language: "es",
-        isStudying: true
+        isStudying: false
     },
     {
         id: 9,
+        Title: "MySQL",
+        Description: {
+            es: "Curso MySQL desde 0 hasta SUPABASE: Domina las bases de datos por codigo 369, Proyectos Web, Academia Apps",
+            en: "Java is a general-purpose, object-oriented programming language."
+        },
+        Image: iconmysql,
+        language: "es",
+        isStudying: false
+    },
+    {
+        id: 10,
+        Title: "WordPress",
+        Description: {
+            es: "1. Como crear una Página Web con Worpress por Renato Jesús Yacolca Neyra. 2. Como crear una Página Web con WordPress y Elementor PRO 2025 por Renato Jesús Yacolca Neyra",
+            en: "Java is a general-purpose, object-oriented programming language."
+        },
+        Image: iconwordpress,
+        language: "es",
+        isStudying: true
+    },
+    {
+        id: 11,
         Title: "CleanCode",
         Description: {
             es: "Lectura del libro: Clean Code by: Robert C.Martin.",
@@ -112,5 +136,16 @@ export const COURSES_INFO = [
         Image: iconBook,
         language: "es",
         isStudying: false
+    },
+    {
+        id: 12,
+        Title: "The art of Unit Testic with examples in C#, Second Edition by: Michael Feathers and Robert C.Martin.",
+        Description: {
+            es: "Lectura del libro: Clean Code by: Robert C.Martin.",
+            en: "Reading the book: Clean Code by: Robert C.Martin.."
+        },
+        Image: iconBook,
+        language: "es",
+        isStudying: true
     },
 ];

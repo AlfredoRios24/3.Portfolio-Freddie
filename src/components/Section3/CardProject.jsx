@@ -26,6 +26,9 @@ export function CardProject() {
                             <img className="inline-block p-2 m-1 bg-gray-700 rounded mb-1 size-12" src={PROJECT_INFO[0].Tools1} />
                             <img className="inline-block p-2 m-1 bg-gray-700 rounded mb-1 size-12" src={PROJECT_INFO[0].Tools2} />
                             <img className="inline-block p-2 m-1 bg-gray-700 rounded mb-1 size-12" src={PROJECT_INFO[0].Tools3} />
+                            <img className="inline-block p-2 m-1 bg-gray-700 rounded mb-1 size-12" src={PROJECT_INFO[0].Tools4} />
+                            <img className="inline-block p-2 m-1 bg-gray-700 rounded mb-1 size-12" src={PROJECT_INFO[0].Tools5} />
+                            <img className="inline-block p-2 m-1 bg-gray-700 rounded mb-1 size-12" src={PROJECT_INFO[0].Tools6} />
                         </ul>
                     </div>
                 </div>
@@ -67,17 +70,10 @@ export function CardProject() {
                             {PROJECT_INFO[2].Description[PROJECT_INFO[2].language]}
                         </p>
                         <div className="mt-4">
-                            <a href="#" className="inline-block p-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
-                                <ion-icon name="logo-github"></ion-icon> CODE
-                            </a>
-                            <a href="#" className="inline-block p-2 ml-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
-                                <ion-icon name="logo-vercel"></ion-icon> VIEW
-                            </a>
+
                         </div>
                         <ul className="mt-6">
-                            <img className="inline-block p-2 m-1 bg-gray-700 rounded mb-1 size-12" src={PROJECT_INFO[2].Tools1} />
-                            <img className="inline-block p-2 m-1 bg-gray-700 rounded mb-1 size-12" src={PROJECT_INFO[2].Tools2} />
-                            <img className="inline-block p-2 m-1 bg-gray-700 rounded mb-1 size-12" src={PROJECT_INFO[2].Tools3} />
+
                         </ul>
                     </div>
                 </div>
