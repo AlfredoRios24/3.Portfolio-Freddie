@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { PROFILE_INFO } from '../../data/Profile';
 import { TRANSLATIONS_SECTION1 } from '../../data/Translations';
-import { useState } from 'react';
 
 function Section1({ language }) {
     const { TitleJob, DescriptionJob, TitleExperience, Experiencie, MoreInfo } = PROFILE_INFO[0];
@@ -16,7 +16,7 @@ function Section1({ language }) {
         <section className="px-4 sm:px-8 lg:px-20 py-32 flex flex-col items-center" id="section1">
             <div className="text-center flex flex-col justify-center items-center max-w-4xl px-4">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl py-1 font-bold text-cyan-400">
-                    Alfredo Ríos
+                    Alfredo Ríos Ibañez
                 </h1>
                 <div className="p-6 flex justify-center items-center">
                     <img
