@@ -58,3 +58,14 @@ function App() {
 }
 
 export default App;
+
+// cada cambio, ejecutar "" ./deploy.sh "" en gitBash para subir contenido a AWS servidor
+
+/* Para actualizarlo al servidor aws
+# 1. Editas código
+# 2. Ejecutas:
+npm run build
+# 3. Luego:
+aws s3 sync dist/ s3://mi-bucket-portfolio --delete
+# 4. (Opcional) Invalidas caché de CloudFront si lo necesitas
+*/
