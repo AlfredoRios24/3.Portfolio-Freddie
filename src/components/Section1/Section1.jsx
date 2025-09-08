@@ -60,7 +60,7 @@ function Section1({ language }) {
                             </p>
                         </a>
                         <button className="bg-indigo-600 hover:bg-cyan-500 text-white py-2 px-4 rounded-md mt-4">
-                            <a href="../../public/download/CV-Alfredo Ríos.pdf" download="CV-Alfredo Ríos.pdf">
+                            <a href="/download/CV-Alfredo-Rios.pdf" download="CV-Alfredo-Rios.pdf">
                                 {TRANSLATIONS_SECTION1[language].textDownloadButton}
                                 <ion-icon name="download-outline"></ion-icon>
                             </a>

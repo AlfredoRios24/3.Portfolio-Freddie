@@ -68,4 +68,10 @@ npm run build
 # 3. Luego:
 aws s3 sync dist/ s3://mi-bucket-portfolio --delete
 # 4. (Opcional) Invalidas caché de CloudFront si lo necesitas
+
+CODIGO PARA GIT BASH
+rm -rf dist node_modules/.vite
+npm install
+npm run build
+
 */
