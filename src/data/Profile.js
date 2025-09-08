@@ -3,7 +3,7 @@ import imageProfile from '../assets/FotoPerfil.jpg';
 
 export const PROFILE_INFO = [
     {
-    TitleJob: "Programador Fronted",
+    TitleJob: "Programador Frontend",
     DescriptionJob: {
         es: "¡Hola Mundo! He tomado la decisión de cambiar de profesion a el de la Programación porque he descubierto, entre otras cosas, que me gusta crear diferentes herramientas que puedan ayudar a mejorar o facilitar las cosas. Esto no solo me permite contribuir en el desarrollo de algo innovador, sino que también me ayuda a comprender mejor como funcionan.",
         en: "Hello World! I have taken the decision to change my profession to programming because I have discovered, among other things, that I like to create different tools that can help to improve or make things easier. This not only allows me to contribute to the development of something innovative, but also helps me to better understand how they work.",

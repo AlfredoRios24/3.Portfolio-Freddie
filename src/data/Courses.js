@@ -19,8 +19,8 @@ export const COURSES_INFO = [
         id: 1,
         Title: "HTML",
         Description: {
-            es: "1. Curso HTML5 des de cero: APlicado a la Web, con Guillermo Visintini. 2.Curso Universidad Desarrollo Web-FrontEnd Web Developer! con Global Mentoring Ing. Ubaldo Acosta",
-            en: "HTML is the standard markup language for creating web pages."
+            es: "Curso HTML5 des de cero: Aplicado a la Web, Curso Web-FrontEnd Web Developer.",
+            en: "HTML5 course from scratch: Applied to the Web, Web-FrontEnd Web Developer Course."
         },
         Image: iconHTML,
         ImageCU: iconUdemy,
@@ -31,8 +31,8 @@ export const COURSES_INFO = [
         id: 2,
         Title: "CSS",
         Description: {
-            es: "1. Curso Aprende CSS3 sin dolor, con Fransisco Javier Arce. 2.Curso Universidad Desarrollo Web-FrontEnd Web Developer! con Global Mentoring Ing. Ubaldo Acosta",
-            en: "CSS is a style sheet language used for describing the presentation of a document written in HTML."
+            es: "Curso de CSS3, Curso Web-FrontEnd Web Developer.",
+            en: "CSS3 Course, Web Front-End Course Web Developer."
         },
         Image: iconCSS,
         language: "es",
@@ -42,8 +42,8 @@ export const COURSES_INFO = [
         id: 3,
         Title: "JavaScript",
         Description: {
-            es: "Curso Universidad Desarrollo Web-FrontEnd Web Developer! con Global Mentoring Ing. Ubaldo Acosta",
-            en: "JavaScript is a programming language that allows you to create dynamic content on web pages."
+            es: "Curso Web-FrontEnd Web Developer.",
+            en: "Web Front-End Course Web Developer."
         },
         Image: iconJavaScript,
         language: "es",
@@ -53,8 +53,8 @@ export const COURSES_INFO = [
         id: 4,
         Title: "React",
         Description: {
-            es: "Curso: Master React.js whith AI: From nasics to Advanced con Skool of AI",
-            en: "React is a JavaScript library for building user interfaces."
+            es: "Curso React.js.",
+            en: "React.js Course."
         },
         Image: iconReact,
         language: "es",
@@ -64,8 +64,8 @@ export const COURSES_INFO = [
         id: 5,
         Title: "Tailwind",
         Description: {
-            es: "Curso TailwindCSS from A to Z: Master TailwindCSS Quickly, por Meta Brains.",
-            en: "Tailwind CSS is a highly customizable utility-first CSS framework."
+            es: "Curso TailwindCSS.",
+            en: "Tailwind CSS Course."
         },
         Image: iconTailwind,
         language: "es",
@@ -75,8 +75,8 @@ export const COURSES_INFO = [
         id: 6,
         Title: "Java",
         Description: {
-            es: "Curso Java11 con PUE Consorgi.",
-            en: "Java is a general-purpose, object-oriented programming language."
+            es: "Curso Java11 con PUE Consorci.",
+            en: "Java11 course with PUE Consorci."
         },
         Image: iconJava,
         language: "es",
@@ -86,8 +86,8 @@ export const COURSES_INFO = [
         id: 7,
         Title: "TypeScript",
         Description: {
-            es: "Curso TypeScript for Beginners: Mastering TypeScript Fundamentals, por Meta Brains.",
-            en: "Java is a general-purpose, object-oriented programming language."
+            es: "Curso TypeScript",
+            en: "TypeScript Course"
         },
         Image: iconTypeScript,
         language: "es",
@@ -97,8 +97,8 @@ export const COURSES_INFO = [
         id: 8,
         Title: "SQLite",
         Description: {
-            es: "Curso de Base de Datos Sqlite por Victor Ramos.",
-            en: "Java is a general-purpose, object-oriented programming language."
+            es: "Curso de Base de Datos Sqlite.",
+            en: "SQLite Database Course."
         },
         Image: iconSqlite,
         language: "es",
@@ -108,8 +108,8 @@ export const COURSES_INFO = [
         id: 9,
         Title: "MySQL",
         Description: {
-            es: "Curso MySQL desde 0 hasta SUPABASE: Domina las bases de datos por codigo 369, Proyectos Web, Academia Apps",
-            en: "Java is a general-purpose, object-oriented programming language."
+            es: "Curso MySQL.",
+            en: "MySQL Course."
         },
         Image: iconmysql,
         language: "es",
@@ -119,8 +119,8 @@ export const COURSES_INFO = [
         id: 10,
         Title: "WordPress",
         Description: {
-            es: "1. Como crear una Página Web con Worpress por Renato Jesús Yacolca Neyra. 2. Como crear una Página Web con WordPress y Elementor PRO 2025 por Renato Jesús Yacolca Neyra",
-            en: "Java is a general-purpose, object-oriented programming language."
+            es: "Curso Página Web con Worpress, Página Web con Elementor PRO 2025.",
+            en: "Course: Website with WordPress, Website with Elementor PRO 2025."
         },
         Image: iconwordpress,
         language: "es",
@@ -130,8 +130,8 @@ export const COURSES_INFO = [
         id: 11,
         Title: "CleanCode",
         Description: {
-            es: "Lectura del libro: Clean Code by: Robert C.Martin.",
-            en: "Reading the book: Clean Code by: Robert C.Martin.."
+            es: "",
+            en: ""
         },
         Image: iconBook,
         language: "es",
@@ -139,10 +139,10 @@ export const COURSES_INFO = [
     },
     {
         id: 12,
-        Title: "The art of Unit Testic with examples in C#, Second Edition by: Michael Feathers and Robert C.Martin.",
+        Title: "The art of Unit Testing",
         Description: {
-            es: "Lectura del libro: Clean Code by: Robert C.Martin.",
-            en: "Reading the book: Clean Code by: Robert C.Martin.."
+            es: "",
+            en: ""
         },
         Image: iconBook,
         language: "es",
