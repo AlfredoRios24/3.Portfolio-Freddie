@@ -1,7 +1,7 @@
-#!/bin/bash
+#/bin/bash
 
 # Variables personalizadas
-PEM_PATH="/c/Users/alfre/OneDrive/Documents/Formación Laboral/Projects/3.Portfolio-Freddie/clave-portfolio.pem"
+PEM_PATH="/c/Users/alfre/Documents/Projectos/3.Portfolio-Freddie/clave-portfolio.pem"
 USER="ubuntu"
 IP="13.61.196.196"
 LOCAL_DIST_PATH="./dist"
