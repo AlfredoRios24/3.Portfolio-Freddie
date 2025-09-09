@@ -74,4 +74,10 @@ rm -rf dist node_modules/.vite
 npm install
 npm run build
 
+
+deploy_s3.sh → el archivo donde está tu script.
+
+chmod +x deploy_s3.sh → lo vuelve ejecutable.
+
+./deploy_s3.sh → lo corres en Git Bash.
 */
