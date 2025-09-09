@@ -1,109 +1,92 @@
-    import PropTypes from 'prop-types';
-    import { useState } from 'react';
-    import Switch from './Switch.jsx';
-    import { TRANSLATIONS_HEADER } from '../../data/Translations.js'
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+import Switch from './Switch.jsx';
+import { TRANSLATIONS_HEADER } from '../../data/Translations.js'
 
+import esFlag from '../../assets/es.png';
+import enFlag from '../../assets/en.png';
 
-    const Header = ({ language, toggleLanguage, toggleTheme, isDarkMode }) => {
-    const [isHeaderOpen, setIsHeaderOpen] = useState(true);
+const Header = ({ language, toggleLanguage, toggleTheme, isDarkMode }) => {
+  const [isHeaderOpen, setIsHeaderOpen] = useState(true);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
+  return (
+    <nav className="navheader bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text">
+      <div className="flex justify-between items-center h-20">
+        <button onClick={() => setIsHeaderOpen(!isHeaderOpen)} className="text-4xl">
+          <ion-icon name={isHeaderOpen ? "return-down-back-outline" : "menu-outline"}></ion-icon>
+        </button>
+      </div>
 
-    const toggleHeader = () => {
-        setIsHeaderOpen(!isHeaderOpen); 
-    };
+      {isHeaderOpen && (
+        <ul className="ulheader flex justify-end items-center space-x-8">
+          {["aboutMe", "courses", "moreInfo"].map((item, i) => (
+            <li key={i}>
+              <a
+                href={`#section${i+1}`}
+                className="linkheadersection"
+              >
+                {TRANSLATIONS_HEADER[language][item]}
+              </a>
+            </li>
+          ))}
 
-    const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-    const toggleSettings = () => {
-        setIsSettingsOpen(!isSettingsOpen); 
-    };
-
-
-
-    return (
-        <nav className="navheader dark:bg-gray-900">
-        <div className="flex justify-between items-center">
-            <span className="text-4xl linkheadersection">
-            <button onClick={toggleHeader}>
-                <ion-icon
-                name={isHeaderOpen ? "return-down-back-outline" : "menu-outline"}
-                ></ion-icon>
+          <li>
+            <button onClick={() => setIsSettingsOpen(!isSettingsOpen)} className="linkheadersection">
+              <ion-icon name={isSettingsOpen ? "close-circle-outline" : "settings-outline"}></ion-icon>
             </button>
-            </span>
-        </div>
+          </li>
 
-        {isHeaderOpen && (
-            <ul className="ulheader">
-            <li className="mx-4 my-5 md:my-0">
-                <a href="#section1" className="linkheadersection">
-                    {TRANSLATIONS_HEADER[language].aboutMe}
-                </a>
-            </li>
-            <li className="mx-4 my-5 md:my-0">
-                <a href="#section2" className="linkheadersection">
-                    {TRANSLATIONS_HEADER[language].courses}
-                </a>
-            </li>
-            <li className="mx-4 my-5 md:my-0">
-                <a href="#section3" className="linkheadersection">
-                    {TRANSLATIONS_HEADER[language].moreInfo}
-                </a>
-            </li>
-
-            <li className="mx-4 my-5 md:my-0">
-                <button onClick={toggleSettings} className="linkheadersection">
-                <ion-icon name={isSettingsOpen ? "close-circle-outline" : "settings-outline"}></ion-icon>
-                </button>
-            </li>
-
-            {isSettingsOpen && (
-                <div className="settings-menu bg-indigo-800 font-bold p-4 absolute top-24 right-0 shadow-lg rounded-lg">
-                <ul>
-                    <li className="my-3">
-                    <Switch
-                        label="Inglés"
-                        checked={language === 'en'}
-                        onChange={toggleLanguage}
-                    />
-                    </li>
-
-                    <li className="my-3">
-                    <Switch
-                        label="Español"
-                        checked={language === 'es'}
-                        onChange={toggleLanguage}
-                    />
-                    </li>
-
-                    <li className="my-3">
-                    <Switch
-                        label="Modo Oscuro"
-                        checked={isDarkMode}
-                        onChange={toggleTheme}
-                    />
-                    </li>
-
-                    <li className="my-3">
-                    <Switch
-                        label="Modo Claro"
-                        checked={!isDarkMode}
-                        onChange={toggleTheme}
-                    />
-                    </li>
-                </ul>
-                </div>
-            )}
-            </ul>
-        )}
-        </nav>
-    );
+          {isSettingsOpen && (
+            <div className="settings-menu font-bold p-4 absolute top-24 right-0 shadow-lg rounded-lg bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text ">
+              <ul>
+                <li className="my-3">
+                    
+                  <Switch
+                    label="Español"
+                    checked={language === 'es'}
+                    onChange={toggleLanguage}
+                    icon={<img src={esFlag} alt="English" className="w-6 h-6 rounded-sm" />}
+                  />
+                  <li className="my-3">
+                  <Switch
+                    label="Inglés"
+                    checked={language === 'en'}
+                    onChange={toggleLanguage}
+                     icon={<img src={enFlag} alt="English" className="w-6 h-6 rounded-sm" />}
+                  />
+                </li>
+                </li>
+                <li className="my-3">
+                  <Switch
+                    label="Modo Oscuro"
+                    checked={isDarkMode}
+                    onChange={toggleTheme}
+                    icon={<ion-icon name="moon-outline"></ion-icon>}
+                  />
+                </li>
+                <li className="my-3">
+                  <Switch
+                    label="Modo Claro"
+                    checked={!isDarkMode}
+                    onChange={toggleTheme}
+                    icon={<ion-icon name="sunny-outline"></ion-icon>}
+                  />
+                </li>
+              </ul>
+            </div>
+          )}
+        </ul>
+      )}
+    </nav>
+  );
 };
 
-
 Header.propTypes = {
-    language: PropTypes.string.isRequired,
-    toggleLanguage: PropTypes.func.isRequired,
-    toggleTheme: PropTypes.func.isRequired,
-    isDarkMode: PropTypes.bool.isRequired,
+  language: PropTypes.string.isRequired,
+  toggleLanguage: PropTypes.func.isRequired,
+  toggleTheme: PropTypes.func.isRequired,
+  isDarkMode: PropTypes.bool.isRequired,
 };
 
 export default Header;

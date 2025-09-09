@@ -2,18 +2,33 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
-  darkMode: 'class', // Habilita el modo oscuro basado en la clase 'dark'
+  darkMode: 'class',
   theme: {
     extend: {
-      // Aquí puedes extender tu tema con más colores, tipografías, etc.
       colors: {
-        // Definición de colores personalizados (si los necesitas)
-        'dark-bg': '#121212',
+        // Modo oscuro
+        'dark-bg': '#1e293b',
         'dark-text': '#ffffff',
-        'light-bg': '#ffffff',
-        'light-text': '#000000',
+        'dark-primary': '#38bdf8', // Cyan-400
+
+        // Modo claro
+        'light-bg': '#95b3e7',       // fondo principal
+        'light-section': '#FFFFFF',   // secciones / tarjetas
+        'light-header-footer': '#E0E7FF', // header/footer
+        'light-text': '#111827',     // texto principal
+        'light-title': '#1E40AF',    // títulos
+        'light-primary': '#4F46E5',  // botones y links
+        'light-primary-hover': '#6366F1', // hover botones/links
+        'light-cta': '#22D3EE',      // botones secundarios
+      },
+      fontSize: {
+        'section-text': ['1.125rem', { lineHeight: '1.75rem' }], // 18px
+        'section-title': ['2.25rem', { lineHeight: '2.5rem' }], // 36px
+      },
+      fontWeight: {
+        'section': '700', // negrita
       },
     },
   },

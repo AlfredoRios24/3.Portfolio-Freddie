@@ -3,13 +3,13 @@ import { COURSES_INFO } from '../../data/Courses';
 
 export function CardSkill({ language }) {
     return (
-        <div id="skills-section" className="py-12 rounded-2xl">
+        <div id="skills-section" className="py-12 w-full rounded-2xl ">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center items-center text-center px-8">
 
                 {COURSES_INFO.map(course => (
                     <div 
                         key={course.id}
-                        className={`skill-box p-6 dark:bg-indigo-950 bg-gray-600 rounded-lg text-white cursor-pointer group transition duration-300 relative ${
+                        className={`skill-box p-6 dark:bg-indigo-950 bg-gray-400 rounded-lg text-white cursor-pointer group transition duration-300 relative ${
                             course.isStudying ? 'ring-4 ring-cyan-500' : ''
                         }`}
                     >

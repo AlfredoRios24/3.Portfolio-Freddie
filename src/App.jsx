@@ -8,18 +8,20 @@ import Section2 from './components/Section2/Section2';
 import Section3 from './components/Section3/Section3';
 
 function App() {
-  const [language, setLanguage] = useState('es');
+  const [language, setLanguage] = useState('es'); // idioma
+  const [isDarkMode, setIsDarkMode] = useState(true); // tema
 
+  // Toggle idioma
   const toggleLanguage = () => {
     setLanguage(prevLang => (prevLang === 'es' ? 'en' : 'es'));
   };
 
-  const [isDarkMode, setIsDarkMode] = useState(true);
-
+  // Toggle tema
   const toggleTheme = () => {
-    setIsDarkMode((prevMode) => !prevMode);
+    setIsDarkMode(prevMode => !prevMode);
   };
 
+  // Leer tema guardado en localStorage
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
@@ -27,6 +29,7 @@ function App() {
     }
   }, []);
 
+  // Aplicar tema y guardar en localStorage
   useEffect(() => {
     if (isDarkMode) {
       document.body.classList.add('dark');
@@ -38,26 +41,27 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <>
-      <div className={isDarkMode ? 'dark' : ''} id="Master-Container">
-        <Header
-          language={language}
-          toggleLanguage={toggleLanguage}
-          toggleTheme={toggleTheme}
-          isDarkMode={isDarkMode}
-        />
-        <main className="px-4 sm:px-6 lg:px-12">
-          <Section1 language={language} toggleLanguage={toggleLanguage} />
-          <Section2 language={language} toggleLanguage={toggleLanguage} />
-          <Section3 language={language} toggleLanguage={toggleLanguage} />
-        </main>
-        <Footer language={language} toggleLanguage={toggleLanguage} />
-      </div>
-    </>
+    <div className={isDarkMode ? 'dark' : ''} id="Master-Container">
+      <Header
+        language={language}
+        toggleLanguage={toggleLanguage}
+        toggleTheme={toggleTheme}
+        isDarkMode={isDarkMode}
+      />
+
+      <main className="px-4 sm:px-6 lg:px-12 ">
+        <Section1 language={language} />
+        <Section2 language={language} />
+        <Section3 language={language} />
+      </main>
+
+      <Footer language={language} />
+    </div>
   );
 }
 
 export default App;
+
 
 // cada cambio, ejecutar "" ./deploy.sh "" en gitBash para subir contenido a AWS servidor
 
@@ -73,5 +77,12 @@ CODIGO PARA GIT BASH
 rm -rf dist node_modules/.vite
 npm install
 npm run build
+
+deploy_s3.sh → el archivo donde está tu script.
+
+chmod +x deploy_s3.sh → lo vuelve ejecutable.
+
+./deploy_s3.sh → lo corres en Git Bash.
+
 
 */

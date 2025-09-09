@@ -2,70 +2,159 @@
 @tailwind components;
 @tailwind utilities;
 
-/* estilos reutilizables*/
+/* ------------------------------
+   CENTRO DE MANDO DE COLORES
+   ------------------------------*/
 
+/* MODO CLARO */
+:root {
+  --color-bg: #cfdadf;                  /* Fondo general (azul muy claro) */
+  --color-text: #1e293b;                /* Texto principal (azul gris oscuro) */
+  --color-title: #163b77;               /* Títulos H1/H2 (azul más intenso) */
+  --color-primary: #95b3e7;             /* Botones principales (Indigo-500) */
+  --color-primary-hover: #316396;       /* Botones hover (Indigo-600) */
+  --color-card-bg: #ffffff;             /* Fondo tarjetas */
+  --color-card-bg-section3: #6366f1;    /* Fondo sección 3 (Indigo-500) */
+  --color-header-bg: #95b3e7;           /* Fondo header (azul suave) */
+  --color-footer-bg: #80b0f7;           /* Fondo footer (azul suave) */
+  --color-link: #082a4d;                /* Links */
+  --color-link-hover: #214c50;          /* Links al pasar ratón */
+  --color-divider: #cbd5e1;             /* Bordes/dividers */
+  --color-card-bg-section3: #b3b9c2;
+}
 
+/* MODO OSCURO */
+body.dark {
+  --color-bg: #000d21;          /* Fondo general */
+  --color-text: #ffffff;        /* Texto principal */
+  --color-title: #22d3ee;       /* Titulos H1/H2 */
+  --color-primary: #3730a3;     /* Botones principales */
+  --color-card-bg: #1e293b;     /* Fondo tarjetas */
+  --color-header-bg: #1e293b;   /* Fondo header */
+  --color-footer-bg: #1e293b;   /* Fondo footer */
+  --color-link: #22d3ee;        /* Links */
+  --color-link-hover: #67e8f9;  /* Links al pasar raton */
+  --color-card-bg-section3: #312e81;
+}
 
+/* ------------------------------
+   ESTILOS GLOBALES
+   ------------------------------*/
 
-/* Modo claro - por defecto */
+/* Contenedor central reutilizable */
+.container-center {
+  @apply max-w-7xl mx-auto flex flex-col items-center px-4;
+}
+
+/* Body general */
 body {
-    background: linear-gradient(to right, cyan, white);
-    color: #000;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-  /* Modo oscuro */
-  .dark {
-    background: linear-gradient(to right, black, #172554);
-    color: #fff;
-  }
+/* Titulos */
+.h1 {
+  @apply text-4xl sm:text-5xl lg:text-6xl font-bold;
+  color: var(--color-title);
+}
+.h2 {
+  @apply text-2xl sm:text-3xl lg:text-4xl font-bold;
+  color: var(--color-title);
+}
+
+/* Texto de secciones */
+.text-section {
+  @apply text-lg sm:text-xl md:text-xl font-medium text-center;
+  color: var(--color-text);
+}
+
+/* Botones */
+.btn {
+  @apply py-2 px-6 rounded-md font-semibold transition-all duration-300 md:px-11;
+}
+.btn-primary {
+  @apply inline-flex items-center justify-center text-2xl;
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+.btn-primary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-link-hover);
+  font-size: 1.7rem;
+}
+
+/* Links */
+.link {
+  @apply font-semibold transition-all duration-200;
+  color: var(--color-link);
+}
+.link:hover {
+  color: var(--color-link-hover);
+}
+
+/* Tarjetas */
+.card {
+  @apply p-8 rounded-2xl shadow-lg;
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+}
+
+/* Header */
+.navheader {
+  @apply fixed top-0 right-0 w-full p-6 md:p-8 shadow-lg flex justify-between items-center z-50;
+  background-color: var(--color-header-bg);
+  color: var(--color-text);
+}
+.ulheader {
+  @apply flex justify-end items-center space-x-6 md:space-x-8;
+}
+.linkheadersection {
+  @apply text-lg md:text-3xl font-bold hover:scale-105 transition-all duration-200;
+  color: var(--color-link);
+}
+.linkheadersection:hover {
+  color: var(--color-link-hover);
+  font-size: 2.0rem;
+}
+
+/* Footer */
+.footer-text {
+  @apply text-section font-semibold;
+  color: var(--color-text);
+}
+.footer-btn-scroll {
+  @apply text-6xl rounded-full shadow-lg p-3 fixed bottom-10 right-10;
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.footer-btn-scroll:hover {
+  background-color: var(--color-link-hover);
+  font-size: 4.0rem;
   
-  /* Estilo adicional para el header en modo oscuro
-  .dark .navheader {
-    background-color: #333;
-  } */
+}
+
+.linkfootersection {
+  @apply text-lg md:text-3xl font-bold hover:scale-105 transition-all duration-200;
+  color: var(--color-link);
   
-  /* Otros estilos para el modo oscuro
-  .dark .linkheadersection {
-    color: #ddd;
-  }
+}
+.linkfootersection:hover {
+  color: var(--color-link-hover);
+  font-size: 2.0rem;
+}
+
+/* Switch label para que se vea en ambos modos y tamaño consistente */
+.switch-label {
+  font-weight: bold;
+  font-size: 1.5rem; /* mismo tamaño que los links del header */
+  color: var(--color-text);
+  transition: all 0.2s;
   
-  .dark .p-3 {
-    background-color: #444;
-  }*/
-  
-  /* Agrega más reglas para personalizar los componentes en modo oscuro */
-  
-
-  
-
-
-
-
-
-/* HEADER*/
-.navheader{
-    @apply fixed top-0 left-0 w-full p-10 md:flex md:items-center md:justify-between shadow-lg z-50
 }
 
-.ulheader{
-    @apply md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 opacity-0 md:opacity-100 transition-all ease-out duration-700 top-[-400px]
+/* Asumiendo que tu header tiene 80px de altura */
+.section-anchor {
+  padding-top: 300px;
+  margin-top: -120px;
 }
-
-.linkheadersection{
-    @apply text-2xl  hover:text-cyan-500 hover:text-4xl duration-100 font-bold
-}
-/* SECTION 1*/
-.linksection1{
-    @apply text-indigo-500 inline-flex items-center p-10 m-10 scale-150 text-xl hover:text-cyan-300
-}
-
-.btnsection1{
-    @apply rounded-full mb-20 m-10 px-10 h-20 focus:outline-none text-center border-2 border-black text-3xl bg-indigo-500 hover:bg-cyan-300
-}
-
-/* SECTION 2*/
-.imgsection2{
-    @apply size-32 cursor-pointer hover:animate-pulse
-}
-
-/* SECTION 2: CARDS*/

@@ -14,11 +14,11 @@ export const TRANSLATIONS_HEADER = {
 export const TRANSLATIONS_SECTION1 = {
     es:{
         textDownload: "Para descargar el CV, pulse el botón",
-        textDownloadButton: "Decargar CV"
+        textDownloadButton: "Ver CV"
     },
     en:{
         textDownload: "For download the CV, press the button ",
-        textDownloadButton: "Download CV"
+        textDownloadButton: "View CV"
     },
 };
 
@@ -36,11 +36,11 @@ export const TRANSLATION_SECTION2 = {
 
 export const TRANSLATION_SECTION3 = {
     es:{
-        titleProject: "Proyectos",
+        titleProject: "PROJECTOS",
         titleProjectDescription: " "
     },
     en:{
-        titleProject: "Projects",
+        titleProject: "PROJECTS",
         titleProjectDescription: " "
     },
 };
