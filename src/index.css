@@ -11,7 +11,7 @@
   --color-bg: #cfdadf;                  /* Fondo general (azul muy claro) */
   --color-text: #1e293b;                /* Texto principal (azul gris oscuro) */
   --color-title: #163b77;               /* Títulos H1/H2 (azul más intenso) */
-  --color-primary: #95b3e7;             /* Botones principales (Indigo-500) */
+  --color-primary: #457cdc;             /* Botones principales (Indigo-500) */
   --color-primary-hover: #316396;       /* Botones hover (Indigo-600) */
   --color-card-bg: #ffffff;             /* Fondo tarjetas */
   --color-card-bg-section3: #6366f1;    /* Fondo sección 3 (Indigo-500) */
@@ -20,7 +20,7 @@
   --color-link: #082a4d;                /* Links */
   --color-link-hover: #214c50;          /* Links al pasar ratón */
   --color-divider: #cbd5e1;             /* Bordes/dividers */
-  --color-card-bg-section3: #b3b9c2;
+  --color-card-bg-section3: #93c5fd ;
 }
 
 /* MODO OSCURO */

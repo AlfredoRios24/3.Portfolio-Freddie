@@ -9,7 +9,7 @@ export function CardSkill({ language }) {
                 {COURSES_INFO.map(course => (
                     <div 
                         key={course.id}
-                        className={`skill-box p-6 dark:bg-indigo-950 bg-gray-400 rounded-lg text-white cursor-pointer group transition duration-300 relative ${
+                        className={`skill-box p-6 dark:bg-indigo-950 bg-blue-300 rounded-lg text-white cursor-pointer group transition duration-300 relative ${
                             course.isStudying ? 'ring-4 ring-cyan-500' : ''
                         }`}
                     >
