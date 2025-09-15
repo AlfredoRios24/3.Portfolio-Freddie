@@ -1,5 +1,4 @@
 
-import iconCSS from '../assets/IconsProgramation/CSS.png';
 import iconReact from '../assets/IconsProgramation/React JS 2.png';
 import iconTailwind from '../assets/IconsProgramation/Tailwindcss.png';
 import iconJava from '../assets/IconsProgramation/Java.webp';
@@ -47,7 +46,6 @@ export const PROJECT_INFO = [
         Image: fondowbfanals,
         Tools1: wordpress,
         Tools2: iconmysql,
-        Tools3: iconCSS,
         language: "es",
         
     },

@@ -15,10 +15,19 @@ export function CardProject() {
                             {PROJECT_INFO[0].Description[PROJECT_INFO[0].language]}
                         </p>
                         <div className="mt-4">
-                            <a href="#" className="inline-block p-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
-                                <ion-icon name="logo-github"></ion-icon> CODE
+                            <a href="https://github.com/AlfredoRios24/3.Registro_notas_Client"
+                                target='_blank'
+                                className="inline-block p-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
+                                <ion-icon name="logo-github"></ion-icon> CODE WEB
                             </a>
-                            <a href="#" className="inline-block p-2 ml-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
+                            <a href="https://github.com/AlfredoRios24/3.Registro_notas_Server"
+                                target='_blank'
+                                className="inline-block p-2 ml-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
+                                <ion-icon name="logo-github"></ion-icon> CODE SERVER
+                            </a>
+                            <a href="https://3-registro-notas-client.vercel.app/"
+                            target='_blank'
+                            className="inline-block p-2 ml-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
                                 <ion-icon name="logo-vercel"></ion-icon> VIEW
                             </a>
                         </div>
@@ -44,17 +53,15 @@ export function CardProject() {
                             {PROJECT_INFO[1].Description[PROJECT_INFO[1].language]}
                         </p>
                         <div className="mt-4">
-                            <a href="#" target='_blank' className="inline-block p-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
-                                <ion-icon name="logo-github"></ion-icon> CODE
-                            </a>
-                            <a href="#" target='_blank' className="inline-block p-2 ml-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
+                            <a href="http://56.228.3.21/"
+                            target='_blank'
+                            className="inline-block p-2 ml-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
                                 <ion-icon name="logo-vercel"></ion-icon> VIEW
                             </a>
                         </div>
                         <ul className="mt-6">
                             <img className="inline-block p-2 m-1 bg-gray-700 rounded mb-1 size-12" src={PROJECT_INFO[1].Tools1} />
                             <img className="inline-block p-2 m-1 bg-gray-700 rounded mb-1 size-12" src={PROJECT_INFO[1].Tools2} />
-                            <img className="inline-block p-2 m-1 bg-gray-700 rounded mb-1 size-12" src={PROJECT_INFO[1].Tools3} />
                         </ul>
                     </div>
                 </div>
