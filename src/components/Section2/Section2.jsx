@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
-import { TRANSLATION_SECTION2 } from '../../data/Translations';
+import { TRANSLATION_SECTION2, TRANSLATION_SECTION22 } from '../../data/Translations';
 import { CardSkill } from './CardSkill';
+import { CardBook } from './CardBook';
 
 function Section2({ language }) {
     return (
@@ -10,6 +11,11 @@ function Section2({ language }) {
 
             <div className="w-full max-w-4xl mx-auto flex flex-wrap justify-center gap-8">
                 <CardSkill language={language} />
+            </div>
+
+            <h1 className="h2 mb-4">{TRANSLATION_SECTION22[language].titleBooks}</h1>
+            <div className="w-full max-w-4xl mx-auto flex flex-wrap justify-center gap-8">
+                <CardBook language={language} />
             </div>
         </section>
     );

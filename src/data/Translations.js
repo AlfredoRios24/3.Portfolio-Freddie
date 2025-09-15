@@ -33,6 +33,17 @@ export const TRANSLATION_SECTION2 = {
     },
 };
 
+export const TRANSLATION_SECTION22 = {
+    es:{
+        titleBooks: "Lecturas",
+        
+    },
+    en:{
+        titleBooks: "Readings",
+        
+    },
+};
+
 
 export const TRANSLATION_SECTION3 = {
     es:{

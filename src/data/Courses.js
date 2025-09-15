@@ -8,7 +8,6 @@ import iconJava from '../assets/IconsProgramation/Java.webp';
 import iconTypeScript from '../assets/IconsProgramation/typescript.png'
 import iconSqlite from '../assets/IconsProgramation/Sqlite.png'
 import iconUdemy from '../assets/LogoUdemy.jpg';
-import iconBook from '../assets/iconBook2.png';
 import iconmysql from '../assets/IconsProgramation/mysql.png';
 import iconwordpress from '../assets/IconsProgramation/wordpress.png';
 
@@ -123,28 +122,6 @@ export const COURSES_INFO = [
             en: "Course: Website with WordPress, Website with Elementor PRO 2025."
         },
         Image: iconwordpress,
-        language: "es",
-        isStudying: true
-    },
-    {
-        id: 11,
-        Title: "CleanCode",
-        Description: {
-            es: "",
-            en: ""
-        },
-        Image: iconBook,
-        language: "es",
-        isStudying: false
-    },
-    {
-        id: 12,
-        Title: "The art of Unit Testing",
-        Description: {
-            es: "",
-            en: ""
-        },
-        Image: iconBook,
         language: "es",
         isStudying: true
     },
