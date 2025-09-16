@@ -53,7 +53,7 @@ export function CardProject() {
                             {PROJECT_INFO[1].Description[PROJECT_INFO[1].language]}
                         </p>
                         <div className="mt-4">
-                            <a href="http://56.228.3.21/"
+                            <a href="http://13.61.79.130/"
                             target='_blank'
                             className="inline-block p-2 ml-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300">
                                 <ion-icon name="logo-vercel"></ion-icon> VIEW
