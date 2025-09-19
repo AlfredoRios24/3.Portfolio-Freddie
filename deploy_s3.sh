@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# Para actualizarlo al servidor aws
+
+# CODIGO PARA GIT BASH
+# rm -rf dist node_modules/.vite
+# npm install
+# ./deploy_s3.sh
+
+
 # ------------------------------
 # Configuración
 # ------------------------------

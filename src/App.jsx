@@ -8,15 +8,13 @@ import Section2 from './components/Section2/Section2';
 import Section3 from './components/Section3/Section3';
 
 function App() {
-  const [language, setLanguage] = useState('es'); // idioma
-  const [isDarkMode, setIsDarkMode] = useState(true); // tema
+  const [language, setLanguage] = useState('es');
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
-  // Toggle idioma
   const toggleLanguage = () => {
     setLanguage(prevLang => (prevLang === 'es' ? 'en' : 'es'));
   };
 
-  // Toggle tema
   const toggleTheme = () => {
     setIsDarkMode(prevMode => !prevMode);
   };
@@ -48,24 +46,14 @@ function App() {
         toggleTheme={toggleTheme}
         isDarkMode={isDarkMode}
       />
-
       <main className="px-4 sm:px-6 lg:px-12 ">
         <Section1 language={language} />
         <Section2 language={language} />
         <Section3 language={language} />
       </main>
-
       <Footer language={language} />
     </div>
   );
 }
 
 export default App;
-
-/* Para actualizarlo al servidor aws
-
-CODIGO PARA GIT BASH
-rm -rf dist node_modules/.vite
-npm install
-./deploy_s3.sh
-*/
