@@ -11,6 +11,7 @@ import iconWordpress from '../assets/IconsProgramation/wordpress.png';
 import iconGitHub from '../assets/IconsProgramation/GitHub.png'
 import iconSpringboot from '../assets/IconsProgramation/springboot.png'
 import iconAws from '../assets/IconsProgramation/aws.png'
+import iconDocker from '../assets/IconsProgramation/docker.png'
 
 
 export const COURSES_INFO = [
@@ -103,8 +104,7 @@ export const COURSES_INFO = [
         isStudying: false
     },
 
-    // Cloud & DevOps (puedes añadir AWS, Render, Vercel aquí si quieres)
-    // Por ejemplo, un skill autodidacta:
+    // Cloud & DevOps
     {
         id: 10,
         Title: "Git/GitHub",
@@ -123,6 +123,17 @@ export const COURSES_INFO = [
         Image: iconAws,
         category: "Cloud & DevOps",
         isStudying: false
+    },
+    {
+    id: 15,
+    Title: "Docker",
+    Description: {
+        es: "Contenedorización de aplicaciones para despliegue y desarrollo eficiente",
+        en: "Containerization of applications for efficient deployment and development"
+    },
+    Image: iconDocker,
+    category: "Cloud & DevOps",
+    isStudying: false
     },
 
     // Otros
