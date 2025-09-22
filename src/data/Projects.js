@@ -31,10 +31,23 @@ export const PROJECT_INFO = [
         Tools5: iconmysql,
         Tools6: iconSwagger,
         language: "es",
-
     },
     {
         id: 2,
+        Title: {
+            es: "Katas de Desarrollo Guiado por Pruebas",
+            en: "Katas of Test-Driven Development."
+        },
+        Description: {
+            es: "Este proyecto contiene una colección de Katas de programación implementadas en Java utilizando TDD (Test-Driven Development) como práctica principal. El objetivo es reforzar los conceptos de desarrollo guiado por pruebas, adquirir bases sólidas en testing y mejorar como desarrollador mediante ejercicios iterativos y enfocados en la calidad del código.",
+            en: "This project contains a collection of programming Katas implemented in Java using TDD (Test-Driven Development) as the main practice. The aim is to reinforce the concepts of test-driven development, acquire a solid foundation in testing, and improve as a developer through iterative exercises focused on code quality."
+        },
+        Image: fondo,
+        Tools1: iconJava,
+        language: "es",
+    },
+    {
+        id: 3,
         Title: {
             es: "Web Serralleria Fanals",
             en: "Web Serralleria Fanals"
@@ -48,20 +61,6 @@ export const PROJECT_INFO = [
         Tools2: iconmysql,
         language: "es",
         
-    },
-    {
-        id: 3,
-        Title: {
-            es: "Katas de Desarrollo Guiado por Pruebas",
-            en: "Katas of Test-Driven Development."
-        },
-        Description: {
-            es: "Este proyecto contiene una colección de Katas de programación implementadas en Java utilizando TDD (Test-Driven Development) como práctica principal. El objetivo es reforzar los conceptos de desarrollo guiado por pruebas, adquirir bases sólidas en testing y mejorar como desarrollador mediante ejercicios iterativos y enfocados en la calidad del código.",
-            en: "This project contains a collection of programming Katas implemented in Java using TDD (Test-Driven Development) as the main practice. The aim is to reinforce the concepts of test-driven development, acquire a solid foundation in testing, and improve as a developer through iterative exercises focused on code quality."
-        },
-        Image: fondo,
-        Tools1: iconJava,
-        language: "es",
     },
 
 ];
