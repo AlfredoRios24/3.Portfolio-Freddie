@@ -12,7 +12,7 @@ function Section3({ language }) {
             <p className="text-section mb-8">{TRANSLATION_SECTION3[language].titleProjectDescription}</p>
 
             <div className="w-full max-w-7xl p-8 rounded-2xl shadow-lg" style={{ backgroundColor: "var(--color-card-bg-section3)" }}>
-                <CardProject />
+                <CardProject language={language}/>
             </div>
         </section>
     );

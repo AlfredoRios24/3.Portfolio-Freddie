@@ -1,14 +1,14 @@
 
+import fondo from '../assets/fond.png';
+import fondonotes from '../assets/fondo-notas.jpg';
+import fondowbfanals from '../assets/fondo-wbfanals3.jpg';
+import iconSwagger from '../assets/IconsProgramation/iconswagger.png';
+import iconJava from '../assets/IconsProgramation/Java.webp';
+import iconmysql from '../assets/IconsProgramation/mysql.png';
 import iconReact from '../assets/IconsProgramation/React JS 2.png';
 import iconTailwind from '../assets/IconsProgramation/Tailwindcss.png';
-import iconJava from '../assets/IconsProgramation/Java.webp';
-import iconTypeScript from '../assets/IconsProgramation/typescript.png'
-import fondo from '../assets/fond.png'
-import fondowbfanals from '../assets/fondo-wbfanals3.jpg'
-import wordpress from '../assets/IconsProgramation/wordpress.png'
-import fondonotes from '../assets/fondo-notas.jpg'
-import iconmysql from '../assets/IconsProgramation/mysql.png'
-import iconSwagger from '../assets/IconsProgramation/iconswagger.png';
+import iconTypeScript from '../assets/IconsProgramation/typescript.png';
+import wordpress from '../assets/IconsProgramation/wordpress.png';
 
 
 
