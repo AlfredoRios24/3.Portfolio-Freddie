@@ -15,17 +15,29 @@ https://portafolio-alfredorios.es/
 
 📐 Estructura del proyecto
 
-portfolio/
-├── public/
-├── src/
-│   ├── components/
-│   ├── hooks/
-│   ├── data/
-│   ├── pages/
-│   └── App.jsx
-├── .gitignore
-├── package.json
-└── README.md
+portfolio/ 
+
+├── public/               # Archivos estáticos (favicon, imágenes, etc.) 
+
+├── src/ 
+
+│   ├── components/       # Componentes reutilizables (Header, Footer, etc.) 
+
+│   ├── hooks/            # Hooks personalizados de React 
+
+│   ├── data/             # Información en JSON/JS (skills, proyectos, etc.) 
+
+│   ├── pages/            # Vistas principales (Home, About, Contact...) 
+
+│   └── App.jsx           # Punto de entrada principal 
+
+├── .gitignore 
+
+├── package.json          # Dependencias y scripts 
+
+└── README.md             # Documentación del proyecto 
+
+
 
 ✨ Funcionalidades principales
 <details> <summary>🌗 Apariencia</summary>
