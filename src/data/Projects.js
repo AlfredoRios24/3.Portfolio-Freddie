@@ -52,14 +52,15 @@ export const PROJECT_INFO = [
     {
         id: 3,
         Title: {
-            es: "Nuevo Projecto",
-            en: "New Proyect."
+            es: "Katas de Desarrollo Guiado por Pruebas",
+            en: "Katas of Test-Driven Development."
         },
         Description: {
-            es: "Nuevo Projecto aun sin determinar.",
-            en: ""
+            es: "Este proyecto contiene una colección de Katas de programación implementadas en Java utilizando TDD (Test-Driven Development) como práctica principal. El objetivo es reforzar los conceptos de desarrollo guiado por pruebas, adquirir bases sólidas en testing y mejorar como desarrollador mediante ejercicios iterativos y enfocados en la calidad del código.",
+            en: "This project contains a collection of programming Katas implemented in Java using TDD (Test-Driven Development) as the main practice. The aim is to reinforce the concepts of test-driven development, acquire a solid foundation in testing, and improve as a developer through iterative exercises focused on code quality."
         },
         Image: fondo,
+        Tools1: iconJava,
         language: "es",
     },
 
