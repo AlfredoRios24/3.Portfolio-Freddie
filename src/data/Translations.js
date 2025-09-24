@@ -47,7 +47,7 @@ export const TRANSLATION_SECTION22 = {
 
 export const TRANSLATION_SECTION3 = {
     es:{
-        titleProject: "PROJECTOS",
+        titleProject: "PROYECTOS",
         titleProjectDescription: " "
     },
     en:{

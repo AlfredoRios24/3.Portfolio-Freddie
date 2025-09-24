@@ -31,6 +31,10 @@ export const PROJECT_INFO = [
         Tools5: iconmysql,
         Tools6: iconSwagger,
         language: "es",
+
+        codeWeb: "https://github.com/AlfredoRios24/3.Registro_notas_Client",
+        codeServer: "https://github.com/AlfredoRios24/3.Registro_notas_Server",
+        view: "https://3-registro-notas-client.vercel.app/",
     },
     {
         id: 2,
@@ -45,6 +49,8 @@ export const PROJECT_INFO = [
         Image: fondo,
         Tools1: iconJava,
         language: "es",
+
+        codeWeb: "https://github.com/AlfredoRios24/1.Katas-TDD-Java",
     },
     {
         id: 3,
@@ -60,6 +66,8 @@ export const PROJECT_INFO = [
         Tools1: wordpress,
         Tools2: iconmysql,
         language: "es",
+
+        view: "https://13.61.79.130/",
         
     },
 
