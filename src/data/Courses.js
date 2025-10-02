@@ -10,8 +10,9 @@ import iconMysql from '../assets/IconsProgramation/mysql.png';
 import iconWordpress from '../assets/IconsProgramation/wordpress.png';
 import iconGitHub from '../assets/IconsProgramation/GitHub.png'
 import iconSpringboot from '../assets/IconsProgramation/springboot.png'
-import iconAws from '../assets/IconsProgramation/aws.png'
-import iconDocker from '../assets/IconsProgramation/docker.png'
+import iconAws from '../assets/IconsProgramation/aws.png';
+import iconDocker from '../assets/IconsProgramation/docker.png';
+import iconSecurity from '../assets/iconSecurity.png';
 
 
 export const COURSES_INFO = [
@@ -142,6 +143,14 @@ export const COURSES_INFO = [
         Title: "WordPress",
         Description: { es: "Curso WordPress con Elementor PRO 2025", en: "WordPress with Elementor PRO 2025" },
         Image: iconWordpress,
+        category: "Otros",
+        isStudying: false
+    },
+    {
+        id: 16,
+        Title: "Ciberseguridad",
+        Description: { es: "Curso Seguridad Informática", en: "Computer Security Course" },
+        Image: iconSecurity,
         category: "Otros",
         isStudying: true
     }

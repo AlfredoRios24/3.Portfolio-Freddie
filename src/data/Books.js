@@ -23,6 +23,17 @@ export const BOOKS_INFO = [
         },
         Image: iconBook,
         language: "es",
+        isStudying: false
+    },
+    {
+        id: 3,
+        Title: "Head First Design Patterns",
+        Description: {
+            es: "",
+            en: ""
+        },
+        Image: iconBook,
+        language: "es",
         isStudying: true
     },
 ];
