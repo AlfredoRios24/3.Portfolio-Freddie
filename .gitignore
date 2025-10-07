@@ -19,7 +19,7 @@ build/
 
 # Local files
 *.local
-.sh
+*.sh
 
 # Editor directories and files
 .vscode/*
