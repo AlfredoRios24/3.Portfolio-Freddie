@@ -64,7 +64,7 @@ function Section1({ language }) {
                 </a>
 
                 <a
-                    href="/download/CV-Alfredo-Rios.pdf"
+                    href="/download/CV-Alfredo-Rios-2025.pdf"
                     target="_blank"
                     className="btn btn-primary"
                 >
