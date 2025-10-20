@@ -50,7 +50,7 @@ export const PROJECT_INFO = [
         Tools1: iconJava,
         language: "es",
 
-        codeWeb: "https://github.com/AlfredoRios24/1.Katas-TDD-Java",
+        codeRepository: "https://github.com/AlfredoRios24/1.Katas-TDD-Java",
     },
     {
         id: 3,

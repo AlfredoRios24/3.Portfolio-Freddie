@@ -37,6 +37,15 @@ export function CardProject({ language }) {
                                         <ion-icon name="logo-github"></ion-icon> CODE WEB
                                     </a>
                                 )}
+                                    {project.codeRepository && (
+                                    <a
+                                        href={project.codeRepository}
+                                        target="_blank"
+                                        className="inline-block p-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300"
+                                    >
+                                        <ion-icon name="logo-github"></ion-icon> CODE REPOSITORY
+                                    </a>
+                                )}
                                 {project.codeServer && (
                                     <a
                                         href={project.codeServer}
@@ -46,6 +55,7 @@ export function CardProject({ language }) {
                                         <ion-icon name="logo-github"></ion-icon> CODE SERVER
                                     </a>
                                 )}
+                                
                                 {project.view && (
                                     <a
                                         href={project.view}
