@@ -1,5 +1,6 @@
 
-import fondo from '../assets/fond.png';
+import fondoPortafolio from '../assets/fondo-portafolio.jpg';
+
 import fondonotes from '../assets/fondo-notas.jpg';
 import fondowbfanals from '../assets/fondo-wbfanals3.jpg';
 import iconSwagger from '../assets/IconsProgramation/iconswagger.png';
@@ -9,6 +10,16 @@ import iconReact from '../assets/IconsProgramation/React JS 2.png';
 import iconTailwind from '../assets/IconsProgramation/Tailwindcss.png';
 import iconTypeScript from '../assets/IconsProgramation/typescript.png';
 import wordpress from '../assets/IconsProgramation/wordpress.png';
+import springboot from '../assets/IconsProgramation/springboot.png';
+import vercel from '../assets/clouds/vercel.svg';
+import render from '../assets/clouds/render.png';
+import javaScript from '../assets/IconsProgramation/JavaScript.png'
+import maven from '../assets/clouds/maven.png';
+import elementor from '../assets/IconsProgramation/elementor.png';
+import aws from '../assets/IconsProgramation/aws.png';
+import codekata from '../assets/codekata.jpg'
+
+
 
 
 
@@ -20,16 +31,23 @@ export const PROJECT_INFO = [
             en: "Register Note"
         },
         Description: {
-            es: "Desarrollo de una herramienta de trabajo para crear, editar y guardar notas. Se han usado diferentes técnologias, des del lado del Fronted: ReactJS y TypeScript y del Backend: Spring y Mysql. Esta experiéncia me permitio profundizar en funcionalidades como hacer las llamadas al servidor, comprender parte de un funcionamiento api curl y crear mis primeras pruebas unitarias e integrales.",
-            en: "Development of a working tool to create, edit and save notes. Different technologies have been used, from the frontend side: ReactJS and TypeScript and from the backend side: Spring and Mysql. This experience allowed me to deepen in functionalities such as making calls to the server, understanding part of a curl api operation, unit and integral priebas."
+            es: "Proyecto Fullstack: Desarrollo de una herramienta de trabajo para crear, editar y guardar notas. Se han usado diferentes técnologias, des del lado del Fronted: ReactJS y TypeScript y del Backend: Spring y Mysql. Esta experiéncia me permitio profundizar en funcionalidades como hacer las llamadas al servidor, comprender parte de un funcionamiento api curl y crear mis primeras pruebas unitarias e integrales.",
+            en: "Project Fullstack: Development of a working tool to create, edit and save notes. Different technologies have been used, from the frontend side: ReactJS and TypeScript and from the backend side: Spring and Mysql. This experience allowed me to deepen in functionalities such as making calls to the server, understanding part of a curl api operation, unit and integral priebas."
         },
         Image: fondonotes,
-        Tools1: iconReact,
-        Tools2: iconTypeScript,
-        Tools3:iconTailwind,
-        Tools4: iconJava,
-        Tools5: iconmysql,
-        Tools6: iconSwagger,
+
+        Tools1: vercel,
+        Tools2: iconReact,
+        Tools3: iconTypeScript,
+        Tools4: iconTailwind,
+
+        Tools5: render,
+        Tools6: springboot,
+        Tools7: iconJava,
+        Tools8: iconSwagger,
+
+        Tools9: render,
+        Tools10: iconmysql,
         language: "es",
 
         codeWeb: "https://github.com/AlfredoRios24/3.Registro_notas_Client",
@@ -46,8 +64,11 @@ export const PROJECT_INFO = [
             es: "Este proyecto contiene una colección de Katas de programación implementadas en Java utilizando TDD (Test-Driven Development) como práctica principal. El objetivo es reforzar los conceptos de desarrollo guiado por pruebas, adquirir bases sólidas en testing y mejorar como desarrollador mediante ejercicios iterativos y enfocados en la calidad del código.",
             en: "This project contains a collection of programming Katas implemented in Java using TDD (Test-Driven Development) as the main practice. The aim is to reinforce the concepts of test-driven development, acquire a solid foundation in testing, and improve as a developer through iterative exercises focused on code quality."
         },
-        Image: fondo,
-        Tools1: iconJava,
+        Image: codekata,
+
+        Tools1: maven,
+        Tools2: iconJava,
+        Tools3: javaScript,
         language: "es",
 
         codeRepository: "https://github.com/AlfredoRios24/1.Katas-TDD-Java",
@@ -59,16 +80,51 @@ export const PROJECT_INFO = [
             en: "Web Serralleria Fanals"
         },
         Description: {
-            es: "Desarrollo de una pagina web a través de la herramienta de Wordpress, se estima que pueda ser pública en un futuro cercano. La construccion y diseño estan inspirado en plantillas de Elementor de WP. Esta experiencia me permitio adquirir conocimientos básicos de diseño de webs.",
-            en: "Development of a website through the Wordpress tool, the company is real and is expected to be public in the near future. The construction and design are inspired by WP Elementor templates."
+            es: "Desarrollo de una pagina web con el diseño inspirado en Elementor de Wordpress, la construcción de la web se ha desarrolado con ReactTS y TailwindCSS, el despliegue se ha realizado con Vercel y codigo en GitHub. Se estima que pueda ser pública en un futuro cercano. Esta experiencia me permitio adquirir conocimientos básicos de diseño de webs.",
+            en: "Development of a website with a design inspired by Wordpress' Elementor. The website was built using ReactTS and TailwindCSS, deployed with Vercel, and coded in GitHub. It is expected to be made public in the near future. This experience allowed me to acquire basic knowledge of web design."
         },
         Image: fondowbfanals,
-        Tools1: wordpress,
-        Tools2: iconmysql,
+
+        Tools1: vercel,
+        Tools2: iconReact,
+        Tools3: iconTypeScript,
+        Tools4:iconTailwind,
+
+        Tools5: aws,
+        Tools6: wordpress,
+        Tools7: elementor,
+
+
+
         language: "es",
 
-        view: "https://13.61.79.130/",
+        codeRepository: "https://github.com/AlfredoRios24/3.-Web-Fanals",
+        view: "https://3-web-fanals.vercel.app/",
         
     },
+        {
+        id: 4,
+        Title: {
+            es: "Portafolio Personal",
+            en: "Personal Portfolio"
+        },
+        Description: {
+            es: "Diseño y desarrollo de mi portafolio personal para mostrar mis proyectos, habilidades y experiencia profesional. Dominio propio y construido con React y TailwindCSS. El despliegue se ha realizado con AWS.",
+            en: "Design and development of my personal portfolio to showcase my projects, skills, and professional experience. Owned and built with React and TailwindCSS. Deployment was carried out with AWS."
+        },
+        Image: fondoPortafolio,
+
+        Tools1: aws,
+        Tools2: iconReact,
+        Tools3: javaScript,
+        Tools4:iconTailwind,
+
+        language: "es",
+
+        codeRepository: "https://github.com/AlfredoRios24/3.Portfolio-Freddie",
+        view: "https://portafolio-alfredorios.es/",
+        
+    },
+    
 
 ];

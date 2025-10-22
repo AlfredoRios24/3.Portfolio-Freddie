@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
-import { PROJECT_INFO } from '../../data/Projects';
 
-export function CardProject({ language }) {
+export function CardProject({ language, projects }) {
     return (
         <div className="container mx-auto py-10">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-                {PROJECT_INFO.map((project) => (
+                {projects.map((project) => (
                     <div
                         key={project.id}
                         id="card"
@@ -26,21 +25,22 @@ export function CardProject({ language }) {
                                 {project.Description[language]}
                             </p>
 
-                            {/* Links dinámicos si existen */}
                             <div className="mt-4 space-x-2">
                                 {project.codeWeb && (
                                     <a
                                         href={project.codeWeb}
                                         target="_blank"
+                                        rel="noreferrer"
                                         className="inline-block p-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300"
                                     >
                                         <ion-icon name="logo-github"></ion-icon> CODE WEB
                                     </a>
                                 )}
-                                    {project.codeRepository && (
+                                {project.codeRepository && (
                                     <a
                                         href={project.codeRepository}
                                         target="_blank"
+                                        rel="noreferrer"
                                         className="inline-block p-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300"
                                     >
                                         <ion-icon name="logo-github"></ion-icon> CODE REPOSITORY
@@ -50,16 +50,17 @@ export function CardProject({ language }) {
                                     <a
                                         href={project.codeServer}
                                         target="_blank"
+                                        rel="noreferrer"
                                         className="inline-block p-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300"
                                     >
                                         <ion-icon name="logo-github"></ion-icon> CODE SERVER
                                     </a>
                                 )}
-                                
                                 {project.view && (
                                     <a
                                         href={project.view}
                                         target="_blank"
+                                        rel="noreferrer"
                                         className="inline-block p-2 text-teal-500 bg-gray-700 rounded mb-2 no-underline hover:text-cyan-300"
                                     >
                                         <ion-icon name="logo-vercel"></ion-icon> VIEW
@@ -67,18 +68,33 @@ export function CardProject({ language }) {
                                 )}
                             </div>
 
-                            {/* Herramientas */}
-                            <ul className="mt-6">
-                                {Object.keys(project)
-                                    .filter((key) => key.startsWith('Tools'))
-                                    .map((toolKey) => (
-                                        <img
-                                            key={toolKey}
-                                            className="inline-block p-2 m-1 bg-gray-700 rounded mb-1 size-12"
-                                            src={project[toolKey]}
-                                        />
-                                    ))}
-                            </ul>
+                            <div className="mt-6">
+                                <div className="min-h-[160px] flex flex-col justify-start space-y-2">
+                                    {(() => {
+                                        const tools = Object.keys(project)
+                                            .filter((key) => key.startsWith('Tools') && project[key])
+                                            .map((key) => project[key]);
+
+                                        const chunked = [];
+                                        for (let i = 0; i < tools.length; i += 4) {
+                                            chunked.push(tools.slice(i, i + 4));
+                                        }
+
+                                        return chunked.map((group, index) => (
+                                            <div key={index} className="flex justify-center flex-wrap gap-2">
+                                                {group.map((tool, idx) => (
+                                                    <img
+                                                        key={idx}
+                                                        src={tool}
+                                                        className="p-2 bg-gray-700 rounded size-12"
+                                                        alt={`Tool ${idx}`}
+                                                    />
+                                                ))}
+                                            </div>
+                                        ));
+                                    })()}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 ))}
@@ -89,6 +105,7 @@ export function CardProject({ language }) {
 
 CardProject.propTypes = {
     language: PropTypes.string.isRequired,
+    projects: PropTypes.array.isRequired,
 };
 
 export default CardProject;
