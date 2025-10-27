@@ -7,6 +7,16 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+        keyframes: {
+              'pulse-soft': {
+                '0%, 100%': { transform: 'scale(1)' },
+                '50%': { transform: 'scale(1.1)' },
+              },
+            },
+            animation: {
+              'pulse-soft': 'pulse-soft 1.5s ease-in-out infinite',
+            },
+          
       colors: {
         // Modo oscuro
         'dark-bg': '#1e293b',

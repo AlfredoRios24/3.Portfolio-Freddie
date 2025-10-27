@@ -1,5 +1,6 @@
 import { PROFILE_INFO } from "../../data/Profile";
 import { TRANSLATION_FOOTER } from "../../data/Translations";
+import FloatingWhatsAppButton from './FloatinfWhatsAppButton'
 
 const Footer = ({ language }) => {
   const handleScrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -18,6 +19,13 @@ const Footer = ({ language }) => {
 
         <ul className="flex flex-col sm:flex-row justify-center gap-6 mb-8 font-bold text-center">
           <li className="flex items-center text-lg sm:text-xl md:text-2xl break-words">
+                        <button>
+              <FloatingWhatsAppButton
+              phoneNumber="34628801453"
+              message="¡Hola! Vi tu portafolio y quiero contactarte."
+              tooltip="¡Escríbeme por WhatsApp!"
+              />
+            </button>
             <span>{PROFILE_INFO[0].Phone}</span>
             <button
               onClick={() => copyToClipboard(PROFILE_INFO[0].Phone)}
@@ -25,6 +33,11 @@ const Footer = ({ language }) => {
             >
               <ion-icon name="copy-outline"></ion-icon>
             </button>
+          </li>
+          <li>
+
+
+            
           </li>
           <li className="flex items-center text-lg sm:text-xl md:text-2xl break-words">
             <span>{PROFILE_INFO[0].Email}</span>
@@ -35,12 +48,15 @@ const Footer = ({ language }) => {
               <ion-icon name="copy-outline"></ion-icon>
             </button>
           </li>
+          
         </ul>
       </div>
 
       <button onClick={handleScrollToTop} className="footer-btn-scroll">
         <ion-icon name="arrow-up-circle-outline" style={{ color: "#fff" }}></ion-icon>
       </button>
+
+
     </footer>
   );
 };

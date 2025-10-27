@@ -51,6 +51,7 @@ function App() {
         <Section2 language={language} />
         <Section3 language={language} />
       </main>
+
       <Footer language={language} />
     </div>
   );
