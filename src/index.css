@@ -124,14 +124,19 @@ body {
   color: var(--color-text);
 }
 .footer-btn-scroll {
-  @apply text-6xl rounded-full shadow-lg p-3 fixed bottom-10 right-10;
+  @apply fixed bottom-10 right-10 
+         rounded-full shadow-lg 
+         p-2 sm:p-3 md:p-4 
+         text-4xl sm:text-6xl md:text-7xl 
+         transition-all duration-300 
+         z-50;
   background-color: var(--color-primary);
   color: #fff;
 }
+
 .footer-btn-scroll:hover {
   background-color: var(--color-link-hover);
-  font-size: 4.0rem;
-  
+  transform: scale(1.1);
 }
 
 .linkfootersection {

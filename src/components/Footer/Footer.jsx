@@ -19,7 +19,7 @@ const Footer = ({ language }) => {
 
         <ul className="flex flex-col sm:flex-row justify-center gap-6 mb-8 font-bold text-center">
           <li className="flex items-center text-lg sm:text-xl md:text-2xl break-words">
-                        <button>
+              <button className="mr-3">
               <FloatingWhatsAppButton
               phoneNumber="34628801453"
               message="¡Hola! Vi tu portafolio y quiero contactarte."
@@ -33,11 +33,6 @@ const Footer = ({ language }) => {
             >
               <ion-icon name="copy-outline"></ion-icon>
             </button>
-          </li>
-          <li>
-
-
-            
           </li>
           <li className="flex items-center text-lg sm:text-xl md:text-2xl break-words">
             <span>{PROFILE_INFO[0].Email}</span>
