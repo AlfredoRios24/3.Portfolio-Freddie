@@ -8,15 +8,15 @@ import iconTypeScript from '../assets/IconsProgramation/typescript.png';
 import iconSqlite from '../assets/IconsProgramation/Sqlite.png';
 import iconMysql from '../assets/IconsProgramation/mysql.png';
 import iconWordpress from '../assets/IconsProgramation/wordpress.png';
-import iconGitHub from '../assets/IconsProgramation/GitHub.png'
-import iconSpringboot from '../assets/IconsProgramation/springboot.png'
+import iconGitHub from '../assets/IconsProgramation/GitHub.png';
+import iconSpringboot from '../assets/IconsProgramation/springboot.png';
 import iconAws from '../assets/IconsProgramation/aws.png';
 import iconDocker from '../assets/IconsProgramation/docker.png';
 import iconSecurity from '../assets/iconSecurity.png';
-
+import iconAngular from '../assets/IconsProgramation/angular.png';
 
 export const COURSES_INFO = [
-    // Lenguajes
+    // 🟦 Lenguajes
     {
         id: 1,
         Title: "HTML",
@@ -58,7 +58,7 @@ export const COURSES_INFO = [
         isStudying: false
     },
 
-    // Frameworks y Librerías
+    // 🟩 Frameworks y Librerías
     {
         id: 6,
         Title: "React",
@@ -76,7 +76,7 @@ export const COURSES_INFO = [
         isStudying: false
     },
     {
-        id: 12,
+        id: 8,
         Title: "Spring Boot",
         Description: {
             es: "Framework para desarrollar APIs y aplicaciones Java backend",
@@ -86,10 +86,21 @@ export const COURSES_INFO = [
         category: "Frameworks y Librerías",
         isStudying: false
     },
-
-    // Bases de Datos
     {
-        id: 8,
+        id: 9,
+        Title: "Angular",
+        Description: {
+            es: "Curso Angular",
+            en: "Course Angular"
+        },
+        Image: iconAngular,
+        category: "Frameworks y Librerías",
+        isStudying: true
+    },
+
+    // 🟨 Bases de Datos
+    {
+        id: 10,
         Title: "SQLite",
         Description: { es: "Curso SQLite", en: "SQLite course" },
         Image: iconSqlite,
@@ -97,7 +108,7 @@ export const COURSES_INFO = [
         isStudying: false
     },
     {
-        id: 9,
+        id: 11,
         Title: "MySQL",
         Description: { es: "Curso MySQL", en: "MySQL course" },
         Image: iconMysql,
@@ -105,9 +116,9 @@ export const COURSES_INFO = [
         isStudying: false
     },
 
-    // Cloud & DevOps
+    // 🟧 Cloud & DevOps
     {
-        id: 10,
+        id: 12,
         Title: "Git/GitHub",
         Description: { es: "Control de versiones con Git y GitHub", en: "Version control with Git and GitHub" },
         Image: iconGitHub,
@@ -126,20 +137,20 @@ export const COURSES_INFO = [
         isStudying: false
     },
     {
-    id: 15,
-    Title: "Docker",
-    Description: {
-        es: "Contenedorización de aplicaciones para despliegue y desarrollo eficiente",
-        en: "Containerization of applications for efficient deployment and development"
-    },
-    Image: iconDocker,
-    category: "Cloud & DevOps",
-    isStudying: false
+        id: 14,
+        Title: "Docker",
+        Description: {
+            es: "Contenedorización de aplicaciones para despliegue y desarrollo eficiente",
+            en: "Containerization of applications for efficient deployment and development"
+        },
+        Image: iconDocker,
+        category: "Cloud & DevOps",
+        isStudying: false
     },
 
-    // Otros
+    // 🟥 Otros
     {
-        id: 11,
+        id: 15,
         Title: "WordPress",
         Description: { es: "Curso WordPress con Elementor PRO 2025", en: "WordPress with Elementor PRO 2025" },
         Image: iconWordpress,
