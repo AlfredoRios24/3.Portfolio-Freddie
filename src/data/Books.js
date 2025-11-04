@@ -1,6 +1,4 @@
-
 import iconBook from '../assets/iconBook2.png';
-
 
 export const BOOKS_INFO = [
     {
@@ -8,7 +6,8 @@ export const BOOKS_INFO = [
         Title: "CleanCode",
         Description: {
             es: "",
-            en: ""
+            en: "",
+            ca: ""
         },
         Image: iconBook,
         language: "es",
@@ -19,7 +18,8 @@ export const BOOKS_INFO = [
         Title: "The art of Unit Testing",
         Description: {
             es: "",
-            en: ""
+            en: "",
+            ca: ""
         },
         Image: iconBook,
         language: "es",
@@ -30,7 +30,8 @@ export const BOOKS_INFO = [
         Title: "Head First Design Patterns",
         Description: {
             es: "",
-            en: ""
+            en: "",
+            ca: ""
         },
         Image: iconBook,
         language: "es",
